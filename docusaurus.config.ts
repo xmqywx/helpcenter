@@ -10,7 +10,7 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // S3 deployment configuration
-  url: 'https://helpcentergithub.s3.ap-east-1.amazonaws.com',
+  url: 'http://helpcentergithub.s3-website.ap-east-1.amazonaws.com',
   baseUrl: '/',
   
   onBrokenLinks: 'ignore',
@@ -46,6 +46,7 @@ const config: Config = {
           showLastUpdateTime: false,
           showLastUpdateAuthor: false,
           breadcrumbs: true,
+          routeBasePath: 'docs',
         },
         blog: {
           showReadingTime: true,
