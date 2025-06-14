@@ -25,7 +25,7 @@ Learn how to create, manage, and secure your CoinByte account, including securit
                 <p>Learn how to create and set up your CoinByte account, including registration process and verification requirements.</p>
             </div>
             <div className="card__footer">
-                <a className="button button--primary button--block" href="/helpcenter/docs/account-security/create-account">View Details</a>
+                <a className="button button--primary button--block" href="/docs/account-security/create-account">View Details</a>
             </div>
         </div>
     </div>
@@ -36,7 +36,7 @@ Learn how to create, manage, and secure your CoinByte account, including securit
                 <p>Learn how to set up and use two-factor authentication to enhance your CoinByte account security.</p>
             </div>
             <div className="card__footer">
-                <a className="button button--primary button--block" href="/helpcenter/docs/account-security/two-factor-authentication">View Details</a>
+                <a className="button button--primary button--block" href="/docs/account-security/two-factor-authentication">View Details</a>
             </div>
         </div>
     </div>
