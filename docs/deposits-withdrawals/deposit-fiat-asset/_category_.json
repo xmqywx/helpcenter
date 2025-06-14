@@ -1,0 +1,9 @@
+{
+  "label": "Deposit Fiat Asset",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "title": "Deposit Fiat Asset",
+    "description": "Learn how to deposit fiat assets securely and fastly."
+  }
+}

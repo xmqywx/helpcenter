@@ -1,0 +1,120 @@
+---
+id: manage-your-trade
+title: Manage your trade
+sidebar_label: Manage Your Trade
+sidebar_position: 1
+description: "View and manage your completed and pending orders on CoinByte using the app or web platform."
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import TickList from '@site/src/components/TickList';
+import RoundStepList from '@site/src/components/RoundStepList';
+import InfoBox from '@site/src/components/InfoBox';
+import RelatedArticles from '@site/src/components/RelatedArticles';
+
+# Manage your trade
+
+You can view and manage all completed, open/pending, and cancelled/failed orders by navigating to your Transactions.
+
+Here, you will find detailed information about your current and past orders, including:
+
+<TickList>
+<li>order type</li>
+<li>quantity of an ordered asset</li>
+<li>the exchange rate at the time of sale</li>
+<li>total transaction price</li>
+<li>fees</li>
+<li>order or transaction status</li>
+</TickList>
+
+You can also view all your previous orders and account history if you download a transaction report.
+
+## View all orders or cancel an order
+
+<Tabs>
+<TabItem value="Mobile App" label="App">
+<div style={{ marginTop: '2.5rem' }}></div>
+
+### **App**
+
+<div style={{ marginBottom: '1.5rem' }}></div>
+
+<RoundStepList>
+<li>Select <strong>History</strong><img src={useBaseUrl('/img/general/trade-history-app.png')} alt="trade history app" width="30" /> in the <strong>Dashboard</strong>.</li>
+<li>Switch between <strong>Marketplace (buy/sell)</strong> and <strong>Exchange</strong> at the top of the interface.</li>
+
+<figure style={{ textAlign: 'center' }}>
+   <img src={useBaseUrl('/img/tradinig/faq/1.png')} alt="Select BTC/NZD" style={{ width: 300 }} />
+</figure>
+
+<li>Select each <strong>filled</strong> order to view the order details, including price, trading amount and time.</li>
+
+<figure style={{ textAlign: 'center' }}>
+  <img src={useBaseUrl('/img/tradinig/faq/2.png')} alt="Order Details view in app" style={{ width: 300 }} />
+</figure>
+
+<li>Opening orders can be <strong>cancelled</strong>.</li>
+
+<figure style={{ textAlign: 'center' }}>
+  <img src={useBaseUrl('/img/tradinig/faq/3.png')} alt="Cancel open order in app" style={{ width: 300 }} />
+</figure>
+</RoundStepList>
+
+</TabItem>
+
+<TabItem value="Web Platform" label="Web">
+<div style={{ marginTop: '2.5rem' }}></div>
+
+### **Web**
+
+<div style={{ marginBottom: '1.5rem' }}></div>
+
+<RoundStepList>
+<li>Select <strong>Transaction History</strong><img src={useBaseUrl('/img/general/trade-history-web.png')} alt="trade history web" width="30" />  in the header.</li>
+<li>Switch between <strong>Buy/Sell</strong> and <strong>Exchange</strong> at the left of the page.</li>
+
+<figure style={{ textAlign: 'center' }}>
+  <img src={useBaseUrl('/img/tradinig/faq/4.png')} alt="Order history tabs on web" style={{ width: 500 }} />
+</figure>
+
+<li>Each <strong>filled</strong> order can be selected to view order details, including price, trading amount and time.</li>
+<li>Opening orders can be <strong>cancelled</strong>.</li>
+
+<figure style={{ textAlign: 'center' }}>
+ <img src={useBaseUrl('/img/tradinig/faq/5.png')} alt="Cancel open orders on web" style={{ width: 500 }} />
+</figure>
+</RoundStepList>
+
+</TabItem>
+</Tabs>
+
+---
+
+## Status of transactions
+
+Transactions can have various statuses depending on whether you're dealing with Australian dollars, New Zealand dollars, or cryptocurrency.
+
+When you go to Transactions history on our app or web platform, you’ll typically see one of the following statuses next to each transaction:
+
+- <strong>Pending:</strong> The transaction is queued and awaiting processing.
+- <strong>Processing:</strong> The transaction is still being processed and should reach its destination shortly.
+- <strong>Filled:</strong> The transaction was successfully completed.
+- <strong>Cancelled:</strong> There was an issue with the transaction processing or the wallet address/account number the funds were sent to. The funds should be returned to the original account.
+
+<InfoBox>
+💡<strong>Please note:</strong> The time it takes for a trade to be completed can vary based on several factors, such as the cryptocurrency involved and the transaction amount.
+</InfoBox>
+
+---
+
+This article covers CoinByte's Instant Buy/Sell and Exchange orders. For fiat/crypto deposit & withdrawal instructions, please refer to:
+
+<ul>
+<li><a href="/helpcenter/docs/deposits-withdrawals/deposit-fiat-asset/fiat/deposit-australian-dollars">Deposit Australian dollars</a> and <a href="/helpcenter/docs/deposits-withdrawals/withdraw-fiat-asset/withdraw-australian-dollars">Withdraw Australian Dollars</a></li>
+<li><a href="/helpcenter/docs/deposits-withdrawals/deposit-fiat-asset/fiat/deposit-new-zealand-dollars">Deposit New Zealand dollars</a> and <a href="/helpcenter/docs/deposits-withdrawals/withdraw-fiat-asset/withdraw-new-zealand-dollars">Withdraw New Zealand dollars</a></li>
+<li><a href="/helpcenter/docs/deposits-withdrawals/deposit-crypto/deposit-crypto">Deposit crypto to CoinByte</a> and <a href="/helpcenter/docs/deposits-withdrawals/withdraw-crypto/withdraw-crypto-from-coinbyte">Withdraw crypto from CoinByte</a></li>
+</ul>
+
+<RelatedArticles category="trading" />

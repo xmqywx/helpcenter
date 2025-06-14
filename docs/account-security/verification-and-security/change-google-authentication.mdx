@@ -1,0 +1,102 @@
+---
+id: change-google-authentication
+title: Change Google Authentication
+sidebar_label: Change Google Authentication
+sidebar_position: 2
+description: "Learn how to change your Google Authenticator for 2FA on CoinByte when switching devices."
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import InfoBox from '@site/src/components/InfoBox';
+import WarningBox from '@site/src/components/WarningBox';
+import RoundStepList from '@site/src/components/RoundStepList';
+import RelatedArticles from '@site/src/components/RelatedArticles';
+
+If you replace or lose the device you use for two-factor authentication (2FA), you'll need to change your Google authentication to maintain account security.
+
+<WarningBox>
+💡After resetting your Google verification, you will not be able to withdraw currencies within 24 hours.
+</WarningBox>
+
+---
+
+## How to change your Google authentication if you have access to your registered Google authentication
+
+<Tabs groupId="platform">
+  <TabItem value="mobile" label="Mobile App">
+    <div style={{ marginTop: '2.5rem' }}></div>
+    
+### **App**
+
+<div style={{ marginTop: '1.5rem' }}></div>
+<RoundStepList>
+  <li>Select the <strong>CoinByte icon</strong> <img src={useBaseUrl('/img/general/logo_app.png')} alt="logo" width="20" /> in the top left to open the Personal center page.</li>
+  <li>Select <strong>Security Settings</strong>.</li>
+  <li>Select <strong>Google Verification</strong>, then select <strong>Change Google verification</strong>.</li>
+  <li>Copy the secret key provided or save the QR Code.</li>
+
+<figure style={{ textAlign: 'center' }}>
+  <img src={useBaseUrl('/img/account-security/verification-and-security/change-google-authentication/1.png')} alt="change auth 1" style={{ width: 300 }} />
+</figure>
+
+  <li>Open your authentication app on the new device and select the <strong>+</strong> symbol, then you can paste the key or scan the QR code.</li>
+  <li>Select the account type.</li>
+  <li>You will now see a 6-digit one-time passcode in your authenticator app on the new device.</li>
+  <li>Go back to CoinByte app and enter the 6-digit one-time passcode. Click <strong>Next Step</strong>.</li>
+
+<figure style={{ textAlign: 'center' }}>
+  <img src={useBaseUrl('/img/account-security/verification-and-security/change-google-authentication/2.png')} alt="change auth 2" style={{ width: 300 }} />
+</figure>
+
+  <li>Finish <strong>Email Verification</strong> and <strong>Google Verification</strong>. (Note: Google Verification here is to enter the 6-digit code on your old device you used before, not on the new device you want to change to.)</li>
+
+<figure style={{ textAlign: 'center' }}>
+  <img src={useBaseUrl('/img/account-security/verification-and-security/change-google-authentication/3.png')} alt="change auth 3" style={{ width: 300 }} />
+</figure>
+
+  <li>Finish changing Google authentication.</li>
+</RoundStepList>
+
+  </TabItem>
+  <TabItem value="web" label="Web">
+   <div style={{ marginTop: '2.5rem' }}></div>
+    
+### **Web**
+
+<div style={{ marginTop: '1.5rem' }}></div>
+<RoundStepList>
+  <li>Select <img src={useBaseUrl('/img/general/profile-center-web.png')} alt="web-center" width="30" /> in the right of the header to open the Personal center.</li>
+  <li>Select <strong>Security Settings</strong>.</li>
+  <li>Select <strong>Edit</strong> in <strong>Google authentication</strong>.</li>
+ <figure style={{ textAlign: 'center' }}>
+  <img src={useBaseUrl('/img/account-security/verification-and-security/change-google-authentication/4.png')} alt="change auth 4" style={{ width: 500 }} />
+</figure>
+  <li>Copy the secret key provided or save the QR Code.</li>
+   <figure style={{ textAlign: 'center' }}>
+  <img src={useBaseUrl('/img/account-security/verification-and-security/change-google-authentication/5.png')} alt="change auth 5" style={{ width: 500 }} />
+</figure>
+  <li>Open your authentication app on the new device and select the <strong>+</strong> symbol, then you can paste the key or scan the QR code.</li>
+  <li>You will now see a 6-digit one-time passcode in your authenticator app on the new device.</li>
+  <li>Go back to CoinByte website and enter the 6-digit one-time passcode. Click <strong>Setting</strong>.</li>
+ <figure style={{ textAlign: 'center' }}>
+  <img src={useBaseUrl('/img/account-security/verification-and-security/change-google-authentication/6.png')} alt="change auth 6" style={{ width: 500 }} />
+</figure>
+  <li>Finish <strong>Email Verification</strong> and <strong>Google Verification</strong>. (Note: Google Verification here is to enter the 6-digit code on your old device you used before, not on the new device you want to change to.)</li>
+ <figure style={{ textAlign: 'center' }}>
+  <img src={useBaseUrl('/img/account-security/verification-and-security/change-google-authentication/7.png')} alt="change auth 7" style={{ width: 500 }} />
+</figure>
+  <li>Finish changing Google authentication.</li>
+</RoundStepList>
+
+  </TabItem>
+</Tabs>
+
+---
+
+## What if you don't have access to your registered Google authentication?
+
+If you've lost access to your device and can't log in with Google Authenticator, please contact our customer support team immediately for assistance.
+
+<RelatedArticles category="account-security" />

@@ -1,0 +1,99 @@
+---
+id: link-a-bank-account
+title: Link a bank account
+sidebar_label: Link bank account
+sidebar_position: 3
+description: "Link your bank account to CoinByte to deposit or withdraw fiat currency securely and easily."
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import WarningBox from '@site/src/components/WarningBox';
+import RoundStepList from '@site/src/components/RoundStepList';
+import TickList from '@site/src/components/TickList';
+import RelatedArticles from '@site/src/components/RelatedArticles';
+
+# Link a bank account
+
+If this is your first time making a withdrawal you’ll need to add a bank account before you can withdraw funds.
+
+<WarningBox>
+💡
+<TickList>
+<li><strong>Please Note:</strong> to protect your asset, you have to complete your first deposit (Minimum 10 AUD) to verify your bank account.</li>
+</TickList>
+</WarningBox>
+
+You can also remove an outdated bank account to avoid accidentally withdrawing to the wrong account.
+
+<TickList>
+<li>For personal accounts, withdrawals must be made to your personal bank account.</li>
+<li>For entity accounts, such as those belonging to a trust, company, or SMSF, withdrawals must go to the bank account linked to that entity.</li>
+</TickList>
+
+<WarningBox>
+💡
+<TickList>
+<li>Please ensure that you enter your bank details accurately. If you provide incorrect bank details and proceed with a withdrawal, recovering the funds (if possible) may take a considerable amount of time.</li>
+<li>For personal accounts, withdrawals must be made to your personal bank account.</li>
+<li>For entity accounts, such as those belonging to a trust, company, or SMSF, withdrawals must go to the bank account linked to that entity.</li>
+</TickList>
+</WarningBox>
+
+## How to link a bank account
+
+<Tabs>
+<TabItem value="app" label="App">
+<div style={{ marginTop: '2.5rem' }}></div>
+
+<RoundStepList>
+<li>Select <strong>Withdraw</strong> at the <strong>Dashboard</strong>.</li>
+<li>Select <strong>Fiat deposit</strong>, then select <strong>AUD</strong> or <strong>NZD</strong>.</li>
+<li>Select <strong>Add Bank Account</strong>, the page will jump to <strong>Deposit</strong>.</li>
+
+<figure style={{ textAlign: 'center' }}>
+  <img src={useBaseUrl('/img/deposits-withdrawals/withdraw-fiat-asset/link-a-bank-account/1.png')} alt="withdraw fiat app1" style={{ width: 300 }} />
+</figure>
+
+<li>Enter a deposit amount (minimum 10 AUD) to verify your account.</li>
+<li>Select <strong>Continue</strong>, copy your unique deposit information.</li>
+<li><strong>Verification:</strong> Log into your bank and use the deposit information to finish the verification deposit.</li>
+</RoundStepList>
+
+<div style={{ marginTop: '1.5rem' }}></div>
+</TabItem>
+
+<TabItem value="web" label="Web">
+<div style={{ marginTop: '2.5rem' }}></div>
+
+<RoundStepList>
+<li>Select <strong>Asset</strong> on the header.</li>
+<li>Select <strong>Withdraw</strong> on the left hand side menu.</li>
+<li>Select <strong>Verify Now</strong>, the page will jump to <strong>Deposit</strong>.</li>
+
+<figure style={{ textAlign: 'center' }}>
+  <img src={useBaseUrl('/img/deposits-withdrawals/withdraw-fiat-asset/link-a-bank-account/2.png')} alt="withdraw fiat web1" style={{ width: 500 }} />
+</figure>
+
+<li>Enter a deposit amount (minimum 10 AUD) to verify your account.</li>
+<li>Select <strong>Continue</strong>, copy your unique deposit information.</li>
+<li><strong>Verification:</strong> Log into your bank and use the deposit information to finish the verification deposit.</li>
+</RoundStepList>
+
+<div style={{ marginTop: '1.5rem' }}></div>
+</TabItem>
+</Tabs>
+
+## How to remove a bank account (App only)
+
+Currently, removing bank account is temporarily only supported on App.
+<RoundStepList>
+<li>Select <strong>CoinByte icon</strong> <img src={useBaseUrl('/img/general/logo_app.png')} alt="logo" width="20" /> on the top left to open <strong>Personal center</strong>.</li>
+<li>Select <strong>your email address</strong> to go to <strong>Account info</strong>.</li>
+<li>Select <strong>Bank Account</strong>.</li>
+<li>Select the bank account you want to delete, confirm.</li>
+</RoundStepList>
+
+
+<RelatedArticles category="deposits-withdrawals" />

@@ -1,0 +1,91 @@
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+.docItemContainer {
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+
+.docItemCol {
+  max-width: 75rem;
+}
+
+/* 相关文章样式 */
+.relatedArticles {
+  margin: 3rem 0;
+  padding: 2rem 0;
+  border-top: 1px solid var(--ifm-color-secondary-dark);
+}
+
+.relatedArticles h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--ifm-color-primary);
+}
+
+.relatedArticlesList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.relatedArticleItem {
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-secondary-dark);
+  background-color: var(--ifm-background-color);
+  transition: all 0.3s ease;
+}
+
+.relatedArticleItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  border-color: var(--ifm-color-primary-lighter);
+}
+
+.relatedArticleItem h3 {
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+  font-size: 1.2rem;
+  color: var(--ifm-heading-color);
+}
+
+.relatedArticleItem p {
+  margin-bottom: 1rem;
+  color: var(--ifm-color-content);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.relatedArticleItem a {
+  font-weight: 500;
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.relatedArticleItem a:hover {
+  color: var(--ifm-color-primary-dark);
+  text-decoration: none;
+}
+
+/* 响应式布局 */
+@media (max-width: 996px) {
+  .relatedArticlesList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .relatedArticlesList {
+    grid-template-columns: 1fr;
+  }
+  
+  .relatedArticleItem {
+    padding: 1.2rem;
+  }
+} 

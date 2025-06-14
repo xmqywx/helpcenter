@@ -1,0 +1,9 @@
+{
+  "label": "instant-buy-sell",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "title": "Instant buy and sell",
+    "description": "Quickly buy or sell crypto with AUD or NZD using CoinByte's Instant Buy/Sell feature, including auto-invest and trading chart guidance."
+  }
+}

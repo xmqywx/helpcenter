@@ -1,0 +1,135 @@
+---
+id: withdraw-crypto-from-coinbyte
+title: Withdraw Crypto from CoinByte
+sidebar_label: Withdraw crypto
+sidebar_position: 1
+description: "Learn how to withdraw crypto from CoinByte, including address setup, supported networks, fees, and limits."
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import WarningBox from '@site/src/components/WarningBox';
+import InfoBox from '@site/src/components/InfoBox';
+import RoundStepList from '@site/src/components/RoundStepList';
+import RelatedArticles from '@site/src/components/RelatedArticles';
+
+# Withdraw Crypto from CoinByte
+
+To withdraw any asset on CoinByte, you must first add and verify a withdrawal address, please refer to <strong>[Add a crypto wallet address](/helpcenter/docs/deposits-withdrawals/withdraw-crypto/add-or-remove-a-crypto-withdrawal-wallet-address/#how-to-add-a-wallet-address)</strong>.
+
+All new withdrawal addresses require 2FA verification, including:
+
+- Email and SMS confirmation
+- Google authenticator verification
+
+<WarningBox>
+⚠️<strong>Important notice:</strong>
+<ul>
+<li>It's essential to carefully choose the correct network before sending or receiving crypto.</li>
+<li>Always verify both the address and network before making any transfers.</li>
+<li>Crypto withdrawals cannot be canceled. Once a transaction is confirmed on the blockchain, it cannot be undone.</li>
+<li>Assets sent to an incorrect address cannot be recovered.</li>
+</ul>
+</WarningBox>
+
+---
+
+## How to withdraw crypto from CoinByte?
+
+<Tabs>
+<TabItem value="Mobile App" label="App">
+<div style={{ marginTop: '2.5rem' }}></div>
+
+### **App**
+
+<div style={{ marginBottom: '1.5rem' }}></div>
+
+<RoundStepList>
+<li>Select <strong>Withdraw</strong> in <strong>Dashboard</strong>.</li>
+<li>Select <strong>Crypto currency withdrawal</strong>, then select the cryptocurrency you want to withdraw.</li>
+
+<figure style={{ textAlign: 'center' }}>
+  <img src={useBaseUrl('/img/deposits-withdrawals/withdraw-crypto/withdraw-crypto-from-coinbyte/1.png')} alt="withdraw crypto app1" style={{ width: 300 }} />
+</figure>
+
+<li>Select the withdrawal address from the list.</li>
+<li>If it is your first withdrawal of this crypto asset, you need to add a withdrawal address. Please read <strong>[Add or remove a crypto withdrawal wallet address](/helpcenter/docs/deposits-withdrawals/withdraw-crypto/add-or-remove-a-crypto-withdrawal-wallet-address/#how-to-add-a-wallet-address)</strong>.</li>
+<li>Enter the amount of the asset you want to withdraw, review the fees and withdrawal amount.</li>
+
+<figure style={{ textAlign: 'center' }}>
+  <img src={useBaseUrl('/img/deposits-withdrawals/withdraw-crypto/withdraw-crypto-from-coinbyte/2.png')} alt="withdraw crypto app1" style={{ width: 300 }} />
+</figure>
+
+<li>Select <strong>Confirm</strong>. You will need to do 2FA verification to finish the withdrawal.</li>
+</RoundStepList>
+
+</TabItem>
+
+<TabItem value="Web Platform" label="Web">
+<div style={{ marginTop: '2.5rem' }}></div>
+
+### **Web**
+
+<div style={{ marginBottom: '1.5rem' }}></div>
+
+<RoundStepList>
+<li>Select <strong>Asset</strong> in the header.</li>
+<li>Select <strong>Withdraw</strong> on the left-hand side menu.</li>
+<li>Select the cryptocurrency you want to withdraw.</li>
+<li>If it is your first withdrawal of this crypto asset, you need to add a withdrawal address. Please read <strong>[Add or remove a crypto withdrawal wallet address](/helpcenter/docs/deposits-withdrawals/withdraw-crypto/add-or-remove-a-crypto-withdrawal-wallet-address/#how-to-add-a-wallet-address)</strong>.</li>
+<li>Review the fees and withdrawal amount.</li>
+<li>Select <strong>Confirm</strong>. You will need to do 2FA verification to finish the withdrawal.</li>
+</RoundStepList>
+
+</TabItem>
+</Tabs>
+
+---
+
+## Memo codes or Destination Tags
+
+Transactions on some networks, such as Stellar (XLM), Cosmos (ATOM), and Ripple (XRP), will require additional information in the “Memo” field.  
+
+In a similar way to when you pay your rent or send funds to a bank account, the receiver requires a “reference code” to identify who the transaction is from. A message like the one shown will indicate if it’s needed for your transaction.
+
+Always ensure you include this information to avoid permanent loss of funds.
+
+---
+
+## How long does crypto withdrawal take?
+
+Crypto withdrawals are processed and initiated immediately but will remain in a pending status until one confirmation is recorded on the blockchain network.
+
+The processing time may vary depending on:
+
+- The asset being withdrawn
+- Network congestion at the time of the transaction
+
+## Limits
+
+<InfoBox>
+💡<strong>Limits include both cash and crypto transactions.</strong>
+</InfoBox>
+
+- Minimum withdrawal amounts differ depending on the asset and the chosen network. You can see minimum withdrawal amounts in each asset's withdrawal page .
+- <strong>Daily maximum withdrawal:</strong> $50,000 AUD equivalent.
+
+---
+
+## Restriction of withdrawal address
+
+As a cryptocurrency trading platform, CoinByte faces unique compliance risks. We implement strict measures to protect our platform and users from scams and money laundering.
+
+CoinByte supports external wallet withdrawals. However, in line with our Fraud Prevention and Anti-Money Laundering (AML) policy, we prohibit crypto transfers to the following platforms or services:
+
+- ❌ Online gambling sites
+- ❌ Online pharmacies or medication stores
+- ❌ Dark web marketplaces
+- ❌ Fraudulent or illegally operating platforms (e.g., MTI.club, CashFX, Lionshare, YieldNodes)
+
+These platforms may violate Australian law. Any withdrawals to such services are blocked by our system and may trigger restrictions on your account.
+
+For more, please refer to our <strong>[Terms of Services](/helpcenter/docs/user-guide/LEGAL/terms-of-service)</strong>.
+
+<RelatedArticles category="deposits-withdrawals" />

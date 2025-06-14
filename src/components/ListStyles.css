@@ -1,0 +1,59 @@
+/* 信息提示框 InfoBox */
+.info-box {
+  background-color: #eaf4ff;
+  border-left: 4px solid #338eda;
+  padding: 1em 1.2em;
+  margin: 1em 0;
+  border-radius: 6px;
+  color: #114166;
+}
+
+/* 警告框 WarningBox */
+.warning-box {
+  background-color: #fff4e5;
+  border-left: 4px solid #e07b39;
+  padding: 1em 1.2em;
+  margin: 1em 0;
+  border-radius: 6px;
+  color: #6b3d00;
+}
+
+/* TickList 样式 */
+.tick-list {
+  list-style: none;
+  padding-left: 0;
+}
+.tick-list li::before {
+  content: "✓";
+  color: #0a8754;
+  font-weight: bold;
+  margin-right: 0.6em;
+}
+
+/* RoundStepList 样式 */
+.round-step-list {
+  list-style: none;
+  padding-left: 0;
+  counter-reset: step-counter;
+}
+.round-step-list li {
+  counter-increment: step-counter;
+  position: relative;
+  padding-left: 2.5em;
+  margin-bottom: 1em;
+}
+.round-step-list li::before {
+  content: counter(step-counter);
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #e5f0ff;
+  color: #0047ab;
+  font-weight: bold;
+  width: 1.8em;
+  height: 1.8em;
+  line-height: 1.8em;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 0.9em;
+}

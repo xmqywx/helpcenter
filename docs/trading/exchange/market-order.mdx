@@ -1,0 +1,133 @@
+---
+id: market-order
+title: Market order
+sidebar_label: Market Order
+sidebar_position: 2
+description: "Understand how market orders work and when to use them effectively in crypto spot trading."
+---
+
+import WarningBox from '@site/src/components/WarningBox';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import RoundStepList from '@site/src/components/RoundStepList';
+import InfoBox from '@site/src/components/InfoBox';
+import RelatedArticles from '@site/src/components/RelatedArticles';
+
+# Market order
+
+## What is market order
+
+A **market order** in cryptocurrency refers to an order to buy or sell a digital asset immediately at the best available price in the market. When you place a market order, you are willing to accept the current market price, ensuring that the transaction is executed quickly.
+
+## How market order works:
+
+- **Buy Market Order:** When you place a market order to buy a cryptocurrency, you are agreeing to purchase it at the lowest available ask price in the order book. Your order will be filled instantly, but the price may vary slightly due to fluctuations in the market.
+- **Sell Market Order:** When you place a market order to sell a cryptocurrency, you agree to sell it at the highest available bid price. The transaction will be executed immediately, but, again, the price might shift depending on the market.
+
+## Key Characteristics of Market Orders:
+
+- **Instant Execution:** Market orders are filled immediately, making them ideal for traders who want to enter or exit positions quickly.
+- **No Control Over Price:** Unlike limit orders, where you can set a specific price, market orders prioritize speed over price, meaning you don’t control the exact price at which the transaction occurs.
+
+## Example:
+
+- **Buying Bitcoin:** If the current ask price for Bitcoin is $30,000, and you place a buy market order, you will likely pay around $30,000 (depending on available liquidity). The order will be executed almost immediately at that price or close to it.
+- **Selling Bitcoin:** If the highest bid price is $30,000, and you place a sell market order, your Bitcoin will be sold immediately at that price or close to it.
+
+<InfoBox>
+💡<strong>Note:</strong> Market orders are typically used when speed is more important than getting the exact price, such as during highly volatile conditions or when you want to enter or exit the market quickly.
+  To learn about how limit orders work, please see our article: <strong>[Limit order](/helpcenter/docs/trading/spot/limit-order)</strong>.
+
+</InfoBox>
+
+
+
+## How to make a market order in CoinByte
+
+<Tabs>
+<TabItem value="Mobile App" label="App">
+<div style={{ marginTop: '2.5rem' }}></div>
+
+### **App**
+
+<div style={{ marginBottom: '1.5rem' }}></div>
+
+<RoundStepList>
+<li>Select <strong>Exchang</strong> in the bottom tool bar.</li>
+<li>Select the trading pairs, select <strong>Buy</strong> or <strong>Sell</strong>, then select <strong>Market</strong>.</li>
+
+
+<figure style={{ textAlign: 'center' }}>
+  <img src={useBaseUrl('/img/tradinig/exchange/market-order/1.png')} alt="market order1" style={{ width: 300 }} />
+</figure>
+
+<li>Enter the amount of fiat you want to spend, the estimated amount of Crypto you can get is shown; or</li>
+<figure style={{ textAlign: 'center' }}>
+   <img src={useBaseUrl('/img/tradinig/exchange/market-order/2.png')} alt="Enter the amount App" style={{ width: 300 }} />
+</figure>
+
+<li>Adjust the slider to set your position size for this trade.</li>
+
+<figure style={{ textAlign: 'center' }}>
+   <img src={useBaseUrl('/img/tradinig/exchange/market-order/3.png')} alt="Estimated quantity via slider on App" style={{ width: 300 }} />
+</figure>
+
+<li>Select <strong>Buy BTC</strong> (Take BTC as example), then confirm the trading information to finish the deal.</li>
+
+<figure style={{ textAlign: 'center' }}>
+  <img src={useBaseUrl('/img/tradinig/exchange/market-order/4.png')} alt="Market order confirmation on App" style={{ width: 300 }} />
+</figure>
+</RoundStepList>
+
+<WarningBox>
+<strong>Please note:</strong> the order may be executed at an unexpected price depending on market conditions. When placing the order, it will be executed at the price of maximum trading quantity and amount. Because of the limited number of digits in the price, the filled amount may be less than the specified amount.
+</WarningBox>
+
+</TabItem>
+
+<TabItem value="Web Platform" label="Web">
+<div style={{ marginTop: '2.5rem' }}></div>
+
+### **Web**
+
+<div style={{ marginBottom: '1.5rem' }}></div>
+
+<RoundStepList>
+<li>Select <strong>Trade</strong> on the header.</li>
+<li>Select the trading pairs, select <strong>Buy</strong> or <strong>Sell</strong>, then select <strong>Market</strong>.</li>
+
+<figure style={{ textAlign: 'center' }}>
+  <img src={useBaseUrl('/img/tradinig/exchange/market-order/5.png')} alt="Market trading screen on Web" style={{ width: 500 }} />
+</figure>
+
+<li>Enter the amount of fiat you want to spend; or</li>
+<figure style={{ textAlign: 'center' }}>
+  <img src={useBaseUrl('/img/tradinig/exchange/market-order/6.png')} alt="Enter amount on Web" style={{ width: 500 }} />
+</figure>
+
+<li>Adjust the slider to set your position size for this trade.</li>
+
+<figure style={{ textAlign: 'center' }}>
+  <img src={useBaseUrl('/img/tradinig/exchange/market-order/7.png')} alt="Slider and amount setting on Web" style={{ width: 500 }} />
+</figure>
+
+<li>Select <strong>Purchase</strong>, then confirm the trading information to finish the deal.</li>
+
+<figure style={{ textAlign: 'center' }}>
+   <img src={useBaseUrl('/img/tradinig/exchange/market-order/8.png')} alt="Confirmation popup on Web" style={{ width: 500 }} />
+</figure>
+</RoundStepList>
+
+<WarningBox>
+<strong>Please note:</strong> the order may be executed at an unexpected price depending on market conditions. When placing the order, it will be executed at the price of maximum trading quantity and amount. Because of the limited number of digits in the price, the filled amount may be less than the specified amount.
+</WarningBox>
+
+</TabItem>
+</Tabs>
+
+---
+
+**If you want to get the exact price, you can refer to <a href="/helpcenter/docs/tradinig/exchange/limit-order"><strong>Limit Order</strong></a>
+.**
+<RelatedArticles category="trading" />

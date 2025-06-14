@@ -1,0 +1,11 @@
+{
+  "link.title.Docs": "文档",
+  "link.title.Community": "社区",
+  "link.title.More": "更多",
+  "link.item.label.Getting Started": "入门指南",
+  "link.item.label.Stack Overflow": "Stack Overflow",
+  "link.item.label.Discord": "Discord",
+  "link.item.label.Blog": "博客",
+  "link.item.label.GitHub": "GitHub",
+  "copyright": "版权所有 © {{year}} 您的公司。使用 Docusaurus 构建。"
+} 

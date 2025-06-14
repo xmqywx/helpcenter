@@ -1,0 +1,279 @@
+/*
+Basic Footer Styling based on provided HTML structure
+Requires further refinement for exact match and responsiveness
+Icon font setup is required for community icons
+*/
+
+.footerContainer {
+  background-color: #1a1a1a; /* Example dark background */
+  color: #ccc; /* Example light text color */
+  padding: 4rem 0 2rem 0;
+  font-size: 0.9rem;
+}
+
+.wrapper {
+  max-width: var(--ifm-container-width);
+  margin: 0 auto;
+  padding: 0 var(--ifm-spacing-horizontal);
+}
+
+/* Top section with Brand and Lang/Currency */
+.footerTopSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the top */
+  margin-bottom: 3rem;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.brand {
+  margin-right: 2rem; /* Space between brand and lang selector */
+}
+
+.brand h4 {
+  color: #aaa; /* Dimmer copyright text */
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  font-weight: normal;
+}
+
+/* Language/Currency Selector Placeholder Styles */
+.langSelect {
+  /* Basic styling - functionality requires JS */
+  position: relative; 
+  color: #fff;
+}
+
+.langSelectMain {
+ border: 1px solid #555;
+ padding: 0.5rem 1rem;
+ border-radius: 4px;
+ cursor: pointer; /* Indicate interactivity */
+}
+
+.dropBox {
+  /* Hidden by default - requires JS to show */
+ display: none; 
+ position: absolute;
+ bottom: 100%; /* Position above the main selector */
+ right: 0;
+ background-color: #333;
+ border: 1px solid #555;
+ border-radius: 4px;
+ padding: 0.5rem;
+ margin-bottom: 0.5rem; /* Space between dropdown and selector */
+ display: flex; /* Temporary: Show boxes for layout check */
+}
+
+.ulBox {
+ margin: 0 0.5rem;
+}
+
+.ulTitle {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #eee;
+}
+
+.listUl {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listUl .item {
+  padding: 0.3rem 0;
+  cursor: pointer;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.listUl .item:hover {
+  color: #fff;
+}
+
+.listUl .item .iconfont { /* Basic icon placeholder style */
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+  display: none; /* Hide checkmark by default */
+}
+
+.listUl .item.selected .iconfont {
+  display: inline; /* Show checkmark for selected */
+}
+
+/* Main section with links and QR */
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.left {
+  display: flex;
+  flex-wrap: wrap; /* Allow link columns to wrap */
+  flex-grow: 1; /* Allow left side to take more space if needed */
+}
+
+.left ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 2.5rem 1.5rem 0; /* Spacing between link columns */
+  min-width: 150px; /* Minimum width for columns */
+}
+
+.left li {
+  margin-bottom: 0.7rem;
+}
+
+.left .title {
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.left .titleWrapper {
+  margin-top: 1.5rem; /* Add space above titles like 'Support', 'Sell Crypto' */
+}
+
+.left a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.left a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.right {
+  text-align: center;
+  margin-left: 2rem; /* Space between links and QR section */
+  flex-shrink: 0; /* Prevent right side from shrinking too much */
+}
+
+.right .title {
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.registerBtn {
+  display: inline-block;
+  background-color: var(--ifm-color-primary); /* Use theme primary color */
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  transition: background-color 0.2s ease;
+}
+
+.registerBtn:hover {
+  background-color: var(--ifm-color-primary-dark);
+  color: #fff;
+}
+
+.qrCode {
+  /* QR code styling */
+}
+
+.qrCodeImg {
+  display: block;
+  width: 120px; /* Adjust size as needed */
+  height: 120px;
+  margin: 0 auto 0.5rem auto;
+  background-color: white; /* Ensure QR code is visible */
+  padding: 5px; /* Small padding around QR */
+  border-radius: 4px;
+}
+
+.desc {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+/* Community Links */
+.community {
+  text-align: center;
+  margin-bottom: 2rem;
+  border-top: 1px solid #444; /* Separator line */
+  padding-top: 2rem;
+}
+
+.community span {
+  margin-right: 1rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.community a {
+  color: #ccc;
+  margin: 0 0.5rem;
+  font-size: 1.5rem; /* Adjust icon size */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.community a:hover {
+  color: #fff;
+}
+
+.community .iconfont { /* Styles specific to icon font if used */
+
+}
+
+/* Copyright */
+.copyright {
+ text-align: center;
+ color: #aaa;
+ font-size: 0.85rem;
+ border-top: 1px solid #444; /* Separator line */
+ padding-top: 2rem;
+}
+
+/* Basic Responsive Adjustments */
+@media (max-width: 996px) {
+  .footerTopSection,
+  .main {
+    flex-direction: column;
+    align-items: center; /* Center items when stacked */
+  }
+
+  .brand,
+  .langSelect,
+  .left,
+  .right {
+     margin: 0 0 2rem 0; /* Adjust margin for stacked layout */
+     width: 100%; /* Take full width */
+     text-align: center;
+  }
+  
+  .left ul {
+      margin-right: 1rem; /* Reduce spacing between columns */
+      margin-left: 1rem;
+      text-align: left; /* Keep link text left-aligned */
+      min-width: auto; /* Remove min-width */
+      width: calc(50% - 2rem); /* Approximately two columns */
+  }
+  
+   .left ul:nth-child(odd) {
+      margin-left: 0;
+  }
+  .left ul:nth-child(even) {
+      margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+    .left ul {
+        width: 100%; /* Stack columns */
+        margin: 0 0 1.5rem 0;
+    }
+} 

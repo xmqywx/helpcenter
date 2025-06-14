@@ -1,0 +1,9 @@
+{
+  "label": "Withdraw Fiat Asset",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "title": "Withdraw Fiat Asset",
+    "description": "Learn how to Withdraw fiat assets securely and fastly."
+  }
+}

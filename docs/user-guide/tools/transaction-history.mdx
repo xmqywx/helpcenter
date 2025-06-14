@@ -1,0 +1,83 @@
+---
+id: transaction-history
+title: Transaction history
+sidebar_label: Transaction History
+sidebar_position: 2
+description: View all your past deposit/withdrawal transaction records on CoinByte for both crypto and fiat assets.
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import RoundStepList from '@site/src/components/RoundStepList';
+import TickList from '@site/src/components/TickList';
+import InfoBox from '@site/src/components/InfoBox';
+import RelatedArticles from '@site/src/components/RelatedArticles';
+
+# Transaction history
+
+You can view and see all deposit/withdrawal transactions, including completed, open/pending, and cancelled transactions, for both crypto and fiat.
+
+**Here, you will find detailed information about your current and past orders, including:**
+
+<TickList>
+  <li>Transaction type</li>
+  <li>Quantity of an ordered fiat/crypto</li>
+  <li>Transaction time</li>
+  <li>Fees</li>
+  <li>Transaction status (Succeed, Pending and Failed)</li>
+</TickList>
+
+---
+
+## How to view transaction history?
+
+<Tabs>
+<TabItem value="Mobile App" label="App">
+<div style={{ marginTop: '2.5rem' }}></div>
+
+### **App**
+
+<div style={{ marginBottom: '1.5rem' }}></div>
+
+<RoundStepList>
+  <li>Select <strong>Assets</strong> on the bottom.</li>
+  <li>Select <img src={useBaseUrl('/img/general/transaction-history-app.png')} alt="Transaction history icon" width="30" /><strong>Transaction history</strong>.</li>
+
+  <figure style={{ textAlign: 'center' }}>
+     <img src={useBaseUrl('/img/user-guide/tools/transaction-history/1.png')} alt="Select transaction history from assets page" style={{ width: 300 }} />
+  </figure>
+
+  <li>In the <strong>Transaction History</strong>, you can view all your past fiat/crypto deposit records.</li>
+
+  <figure style={{ textAlign: 'center' }}>
+     <img src={useBaseUrl('/img/user-guide/tools/transaction-history/2.png')} alt="Asset App" style={{ width: 300 }} />
+  </figure>
+   <li>Select one record, the detalis of this transaction record would be shown, including <strong>asset amount, transaction status, type of transaction, transaction fee</strong> and <strong>time</strong>.</li>
+ 
+  <figure style={{ textAlign: 'center' }}>
+     <img src={useBaseUrl('/img/user-guide/tools/transaction-history/3.png')} alt="deposit records App" style={{ width: 300 }} />
+  </figure>
+
+</RoundStepList>
+
+</TabItem>
+
+<TabItem value="Web Platform" label="Web">
+<div style={{ marginTop: '2.5rem' }}></div>
+
+### **Web**
+
+<div style={{ marginBottom: '1.5rem' }}></div>
+
+<RoundStepList>
+  <li>Select <strong>Assets</strong> on the header.</li>
+  <li>Select <strong>History</strong> on the left side menu.</li>
+  <li>In the <strong>Transaction History</strong>, you can view all your past deposit/withdrawal records.</li>
+  <li>The details of this transaction record are shown, including <strong>asset amount</strong>, <strong>transaction status</strong>, <strong>type of transaction</strong>, <strong>transaction fee</strong> and <strong>time</strong>.</li>
+</RoundStepList>
+
+</TabItem>
+</Tabs>
+
+<RelatedArticles category="account-management" />

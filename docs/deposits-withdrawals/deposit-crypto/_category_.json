@@ -1,0 +1,9 @@
+{
+  "label": "Deposit Crypto",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "title": "Deposit Crypto",
+    "description": "Step-by-step guide for depositing cryptocurrency to CoinByte, including supported networks, address types, and common precautions."
+  }
+}

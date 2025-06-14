@@ -1,0 +1,9 @@
+{
+  "label": "Update Details",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "title": "Update Your Details",
+    "description": "Guides to change your details or password."
+  }
+}

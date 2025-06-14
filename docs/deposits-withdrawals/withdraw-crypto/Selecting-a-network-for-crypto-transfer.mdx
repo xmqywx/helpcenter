@@ -1,0 +1,89 @@
+---
+id: select-network-for-transfer
+title: Selecting a network for crypto transfer
+sidebar_label: Select network
+sidebar_position: 3
+description: "Understand how to choose the correct network when transferring crypto to or from CoinByte."
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import InfoBox from '@site/src/components/InfoBox';
+import RoundStepList from '@site/src/components/RoundStepList';
+import RelatedArticles from '@site/src/components/RelatedArticles';
+
+# Selecting a network for crypto transfer
+
+When depositing crypto or adding a withdrawal address, you may see several network options. These options determine the network your crypto will be sent through, which is essential to ensure that your funds are delivered safely.
+
+Different networks have varying characteristics, including:
+
+- fees  
+- confirmation protocols  
+- block sizes  
+- transaction speeds  
+
+Crypto tokens are only compatible with the blockchain(s) they are built for transacting on. Each chain uses its own cryptography, which means each chain speaks its own "language".
+
+Before sending or receiving crypto, it’s important to understand how to choose the correct network. Selecting the wrong network may result in your funds not reaching the intended address and may incur the loss of the funds.
+
+<InfoBox>
+💡<strong>Supported network notice:</strong>
+<ul>
+<li>Currently we only support deposits and withdrawals via a crypto's <strong>main network</strong>.</li>
+<li>Please do not deposit from or withdraw to other networks, as your funds may be lost.</li>
+<li><strong>Example:</strong> For BTC, only deposits on the <strong>Bitcoin network</strong> are supported. BTC sent via BEP-20 or ERC-20 will not be credited and cannot be recovered.</li>
+</ul>
+</InfoBox>
+
+---
+
+## How to select correct networks?
+
+<RoundStepList>
+<li>Choose the crypto asset you want to withdraw.</li>
+<li>Paste the address of the wallet or platform you're sending crypto to.</li>
+<li><strong>Check</strong> the list of networks that your chosen platform or wallet supports for the selected cryptocurrency.  
+(On CoinByte, only crypto's <strong>main network</strong> is available now.)</li>
+<li>Select the correct network in the destination wallet or exchange.  
+For example: You want to withdraw BTC from CoinByte to Binance, you have to choose BTC’s <strong>main network</strong> in <strong>Binance app</strong>.</li>
+
+<figure style={{ textAlign: 'center' }}>
+  <img src={useBaseUrl('/img/deposits-withdrawals/withdraw-crypto/selecting-a-network-for-crypto-transfer/1.png')} alt="Other Exchange" style={{ width: 300 }} />
+</figure>
+
+<li>Copy and paste the address into CoinByte’s withdrawal address field.</li>
+
+<figure style={{ textAlign: 'center' }}>
+  <img src={useBaseUrl('/img/deposits-withdrawals/withdraw-crypto/selecting-a-network-for-crypto-transfer/2.png')} alt="CoinByte withdrawal address book" style={{ width: 300 }} />
+</figure>
+
+<li><strong>Review and confirm:</strong> Double-check the address and network before confirming your withdrawal.</li>
+</RoundStepList>
+
+---
+
+## How to confirm supported networks
+
+Currently we only support deposits and withdrawals via a crypto’s <strong>main network</strong>.
+
+<InfoBox>
+💡<strong>Note:</strong>
+<ul>
+<li>You can check which networks are available in deposit/withdrawal page.</li>
+<li>You can also find a full list of all the assets we offer and their supported networks by visiting <strong>[Network Withdrawal Fees](#)</strong>.</li>
+</ul>
+</InfoBox>
+
+---
+
+## Withdrawing to another exchange/Web3 wallet
+
+It’s very important to make sure the network of the receiving side is supported by CoinByte.
+
+If you can't see the name of the network when you've copied the wallet address in, we most likely do not support withdrawals on that network. Some networks shown on the destination deposit page may not be supported by CoinByte.
+
+**Verification:** You can typically verify which networks are supported by your destination wallet by checking its deposit page.
+
+**The safest way to transfer crypto is to** send a small test transaction when you send to a new platform.
+
+<RelatedArticles category="network-and-fees" />

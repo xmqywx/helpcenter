@@ -1,0 +1,9 @@
+{
+  "label": "Exchange",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "title": "Exchange",
+    "description": "Learn how to place, manage, and understand spot trades on CoinByte, including market and limit orders for real-time crypto trading."
+  }
+}

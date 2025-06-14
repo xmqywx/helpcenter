@@ -1,0 +1,76 @@
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+.breadcrumbsContainer {
+  --ifm-breadcrumb-margin-vertical: 0;
+  padding: 1rem var(--ifm-spacing-horizontal);
+  --ifm-breadcrumb-size-multiplier: 0.9;
+  margin-bottom: 0.8rem;
+  --ifm-breadcrumb-separator-size-multiplier: 0.7;
+  display: block !important; /* Ensure it's always visible */
+  background-color: var(--ifm-background-color);
+}
+
+/* Remove this media query to keep breadcrumbs visible on mobile */
+/*
+@media (max-width: 996px) {
+  .breadcrumbsContainer {
+    display: none;
+  }
+}
+*/
+
+/* Selector for IE / Edge (Trident engine) */
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+  .breadcrumbsContainer :global(.breadcrumbs__link) {
+    display: inline;
+  }
+}
+
+:global(.breadcrumbs) {
+  margin-bottom: 0;
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.85rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+:global(.breadcrumbs__item) {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+:global(.breadcrumbs__link) {
+  color: var(--ifm-color-content-secondary);
+  text-decoration: none;
+}
+
+:global(.breadcrumbs__link:hover) {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+:global(.breadcrumbs__separator) {
+  margin-right: 0.5rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+:global(.breadcrumbs__icon) {
+  vertical-align: middle;
+  font-size: 1rem;
+  margin-right: 0.4rem;
+}
+
+:global(.breadcrumbs__item--active .breadcrumbs__link) {
+  color: var(--ifm-color-primary);
+  font-weight: bold;
+  pointer-events: none;
+} 

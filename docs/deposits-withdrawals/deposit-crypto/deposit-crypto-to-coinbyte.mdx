@@ -1,0 +1,134 @@
+---
+id: deposit-crypto-to-coinbyte
+title: Deposit Crypto to CoinByte
+sidebar_label: Deposit crypto to CoinByte
+sidebar_position: 1
+description: "Learn how to deposit crypto to your CoinByte account."
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import WarningBox from '@site/src/components/WarningBox';
+import RoundStepList from '@site/src/components/RoundStepList';
+import TickList from '@site/src/components/TickList';
+import RelatedArticles from '@site/src/components/RelatedArticles';
+import InfoBox from '@site/src/components/InfoBox';
+
+# Deposit Crypto to CoinByte
+
+Depositing crypto to CoinByte is a simple and fast process, but it's essential to carefully verify the deposit address and choose the correct network before initiating the transfer.
+
+<WarningBox>
+⚠️<strong>Important notice:</strong> If you send crypto using incorrect details, we may not be able to recover the funds. If recovery is possible, it may incur significant fees. <strong>Always double-check addresses before sending crypto.</strong>
+</WarningBox>
+
+Before sending or receiving crypto, it's important to understand <strong>how to select the appropriate network</strong>. Choosing the wrong network can result in your funds not reaching the intended address and the funds will be lost. Also, each asset on CoinByte has a unique deposit address, so you'll need to find the specific address for the asset you want to deposit.
+
+<InfoBox>
+<strong>💡Supported network notice:</strong>
+<TickList>
+<li>Currently we only support deposits and withdrawals via a crypto's <strong>main network</strong>.</li>
+<li>Please do not deposit from or withdraw to other networks, as your funds may be lost.</li>
+<li><strong>Example:</strong> For BTC, only deposits on the <strong>Bitcoin network</strong> are supported. BTC sent via BEP-20 or ERC-20 will not be credited and cannot be recovered.</li>
+</TickList>
+</InfoBox>
+
+We suggest reading our FAQ article, which explains how networks work and how to select the right one:  
+<a href="/helpcenter/docs/deposits-withdrawals/withdraw-crypto/select-network-for-transfer/#how-to-select-correct-networks"><strong>How do I select the correct network for my crypto withdrawals and deposits?]</strong></a>
+
+---
+
+## How to deposit crypto
+
+<Tabs>
+<TabItem value="Mobile App" label="App">
+<div style={{ marginTop: '2.5rem' }}></div>
+
+### **App**
+
+<div style={{ marginBottom: '1.5rem' }}></div>
+
+<RoundStepList>
+<li>Select <strong>Deposit</strong> at the <strong>Dashboard</strong>.</li>
+<li>Select <strong>Crypto currency deposit</strong>, then select the asset you want to deposit.</li>
+
+<figure style={{ textAlign: 'center' }}>
+  <img src={useBaseUrl('/img/deposits-withdrawals/deposit-crypto/deposit-crypto-to-coinbyte/1.png')} alt="deposit crypto app1" style={{ width: 300 }} />
+</figure>
+
+<li>Copy the network address.</li>
+
+<figure style={{ textAlign: 'center' }}>
+  <img src={useBaseUrl('/img/deposits-withdrawals/deposit-crypto/deposit-crypto-to-coinbyte/2.png')} alt="deposit crypto app2" style={{ width: 300 }} />
+</figure>
+
+
+<li>Go to your external wallet or other exchange to deposit crypto to this address.</li>
+</RoundStepList>
+<WarningBox>
+⚠️<strong>Please note:</strong> amounts below the minimum recharge threshold will not be successfully processed and cannot be refunded.
+</WarningBox>
+
+
+</TabItem>
+
+<TabItem value="Web Platform" label="Web">
+<div style={{ marginTop: '2.5rem' }}></div>
+
+### **Web**
+
+<div style={{ marginBottom: '1.5rem' }}></div>
+
+<RoundStepList>
+<li>Select <strong>Asset</strong> on the header.</li>
+<li>Select <strong>Deposit</strong> on the left hand side menu.</li>
+<li>Select the crypto currency you want to deposit, take Bitcoin as an example.</li>
+<li>Copy the network address.</li>
+
+<figure style={{ textAlign: 'center' }}>
+  <img src={useBaseUrl('/img/deposits-withdrawals/deposit-crypto/deposit-crypto-to-coinbyte/3.png')} alt="deposit crypto app1" style={{ width: 300 }} />
+</figure>
+
+</RoundStepList>
+<WarningBox>
+⚠️<strong>Please note:</strong> amounts below the minimum recharge threshold will not be successfully processed and cannot be refunded.
+</WarningBox>
+
+</TabItem>
+</Tabs>
+
+---
+
+## Memo codes or Destination Tags
+
+Transactions on some networks, such as Stellar (XLM), Cosmos (ATOM), and Ripple (XRP), will require additional information in the “Memo” field.  
+In a similar way to when you pay rent or transfer via bank, the receiver requires a “reference code” to identify who the transaction is from.
+
+Always ensure to check whether a memo/destination tag is required for the asset you're depositing. If you fail to include it when required, you will lose your funds.
+
+---
+
+## How long do crypto deposits take?
+
+Crypto deposits may take up to 1 hour to appear in your CoinByte account.
+
+The actual time depends on:
+
+<TickList>
+<li>The number of confirmations required.</li>
+<li>Network load and traffic at the time of transfer.</li>
+</TickList>
+
+## Fees for crypto deposits
+
+<TickList>
+<li>CoinByte doesn’t charge any fee for crypto deposits.</li>
+</TickList>
+
+<InfoBox>
+💡<strong>Please note:</strong> Although CoinByte doesn’t charge any fee, network fees apply when you send crypto from another wallet or platform.
+For more details, please refer to FAQ: <strong>What is network fee?</strong>
+</InfoBox>
+
+<RelatedArticles category="deposit-crypto" />

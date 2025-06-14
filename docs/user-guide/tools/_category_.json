@@ -1,0 +1,9 @@
+{
+  "label": "Tools",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "title": "Tools",
+    "description": "description: Learn how to use CoinByte's built-in tools to enhance your trading experience."
+  }
+}

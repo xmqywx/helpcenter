@@ -1,0 +1,73 @@
+---
+id: limit-order
+title: Limit order
+sidebar_label: Limit Order
+sidebar_position: 3
+description: "Learn what a limit order is and how to set one to buy or sell crypto at your desired price."
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import InfoBox from '@site/src/components/InfoBox';
+import RelatedArticles from '@site/src/components/RelatedArticles';
+import RoundStepList from '@site/src/components/RoundStepList';
+
+# Limit order
+
+A limit order enables you to buy or sell cryptocurrency at a price you set, or at a better price if market conditions allow.
+
+## What is Limit order
+
+A <strong>limit order</strong> enables you to buy or sell crypto at a specific price, or a better price if the market supports it.
+
+## How limit order works:
+
+Limit orders work by allowing you to set a specific price at which you’re willing to buy or sell. Once you set the price, your order is added to the order book, waiting for the market price to match your specified limit. This is different from <a href="/helpcenter/docs/trading/spot-trade/market-order">market orders</a>, which are executed immediately at the current market price.
+
+When the market price reaches your limit price, your order will be filled at that price or at a better one.
+
+## Key Characteristics of limit Orders:
+
+The primary benefit of a limit order is that it guarantees you won’t be matched with a worse price than the one you’ve specified. This control allows you to wait for the market to reach your desired price rather than accepting the current market price.
+
+<InfoBox>
+<strong>💡Note:</strong> While limit orders provide strategic advantages, it's important to understand that there’s a downside: your order may be executed only partially or may not be filled at all because market conditions may not match the price you set.
+</InfoBox>
+
+## How to set a limit price?
+
+A buy limit order is only filled at the limit price or lower, and a sell limit order is only filled at the limit price or higher.
+
+For example, if the current market price of BTC/USDT is 50,000:
+
+- <strong>Limit buy order:</strong> your limit buy price should be set <strong>lower</strong> than 50,000.  
+- <strong>Limit sell order:</strong> your limit sell price should be set <strong>higher</strong> than 50,000.
+
+<InfoBox>
+💡<strong>Note:</strong> If your limit price falls on the wrong side of the order book, your order will be executed immediately.
+</InfoBox>
+
+## How to set a limit order on CoinByte
+
+### App & Web 
+
+<RoundStepList>
+<li>Select Exchange (App) or Trade(Web).</li>
+<li>Select Buy or Sell, Select Limit.</li>
+
+<figure style={{ textAlign: 'center' }}>
+  <img src={useBaseUrl('/img/tradinig/exchange/limit-order/1.png')} alt="Limit order" style={{ width: 300 }} />
+</figure>
+
+<li>Set the price you, enter the amount of Crypto  to buy/sell, and the amount of fiat asset you pay of recive is shown; or</li>
+
+<figure style={{ textAlign: 'center' }}>
+  <img src={useBaseUrl('/img/tradinig/exchange/limit-order/2.png')} alt="Limit order 2" style={{ width: 300 }} />
+</figure>
+
+<li>Adjust the slider to set your position size for this trade.</li>
+
+<figure style={{ textAlign: 'center' }}>
+  <img src={useBaseUrl('/img/tradinig/exchange/limit-order/3.png')} alt="Limit order 3" style={{ width: 300 }} />
+</figure>
+</RoundStepList>
+<RelatedArticles category="trading" />
