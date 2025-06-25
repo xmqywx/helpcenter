@@ -9,6 +9,7 @@ export default function CoinByteButton({ text, link }) {
       href={link}
       style={{
         display: 'inline-block',
+        justifyContent: 'center',
         padding: '0.6rem 1.2rem',
         border: `1.5px solid ${themeColor}`,
         borderRadius: '6px',
