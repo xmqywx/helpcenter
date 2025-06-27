@@ -6,6 +6,7 @@ sidebar_position: 8
 description: "Check login and security setting activity history, and what to do if you notice suspicious activity on CoinByte."
 ---
 
+import CoinByteButton from '@site/src/components/CoinByteButton'
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import InfoBox from '@site/src/components/InfoBox';
 import WarningBox from '@site/src/components/WarningBox';
@@ -14,9 +15,10 @@ import RelatedArticles from '@site/src/components/RelatedArticles';
 import RoundStepList from '@site/src/components/RoundStepList';
 
 ## How to view and revoke your active sessions (Web only)
+<CoinByteButton text="Change your email address" link="/account/change-email" />
 
 <RoundStepList>
-  <li>Select the <img src="https://downloads.intercomcdn.com/i/o/t32wgff3/1555803163/42c65a29f4a29401299291309f7a/web_center.png?expires=1749168000&signature=b4bc2817fdaa707604a0ce759b4136bd1351bce22cf74e95381bbe318db46a5f&req=dSUiE8F%2BnoBZWvMW3Hu4ga9r38GE4gnmKNrKHCYOqoMc7BMagqtGe9c7pChl%0Apg%3D%3D%0A" alt="Web Profile Icon" width="25" /> in the header to open the <strong>Personal center</strong>.</li>
+ <li>Select the <img src={useBaseUrl('/img/general/profile-center-web.png')} alt="profile icon" width="30" /> <strong>Profile</strong> in the right of header to open the Personal center.</li>
   <li>Select <strong>Security Settings</strong>.</li>
   <li>
     Scroll to the bottom of the page to view:
