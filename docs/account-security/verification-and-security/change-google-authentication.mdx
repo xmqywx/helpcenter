@@ -6,6 +6,7 @@ sidebar_position: 2
 description: "Learn how to change your Google Authenticator for 2FA on CoinByte when switching devices."
 ---
 
+import CoinByteButton from '@site/src/components/CoinByteButton'
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -66,8 +67,9 @@ If you replace or lose the device you use for two-factor authentication (2FA), y
 ### **Web**
 
 <div style={{ marginTop: '1.5rem' }}></div>
+<CoinByteButton text="Change your Google authentication" link="https://coinbyte.com.au/en-us/user/rebind-ga/" />
 <RoundStepList>
-  <li>Select <img src={useBaseUrl('/img/general/profile-center-web.png')} alt="web-center" width="30" /> in the right of the header to open the Personal center.</li>
+  <li>Select <img src={useBaseUrl('/img/general/profile-center-web.png')} alt="web-center" width="30" /> <strong>Profile</strong> in the right of the header to open the Personal center.</li>
   <li>Select <strong>Security Settings</strong>.</li>
   <li>Select <strong>Edit</strong> in <strong>Google authentication</strong>.</li>
  <figure style={{ textAlign: 'center' }}>
@@ -97,6 +99,6 @@ If you replace or lose the device you use for two-factor authentication (2FA), y
 
 ## What if you don't have access to your registered Google authentication?
 
-If you've lost access to your device and can't log in with Google Authenticator, please contact our customer support team immediately for assistance.
+If you've lost access to your device and can't log in with Google Authenticator, please  <a href="https://coinbyte.com.au/en-us/contact/"<strong>contact us</strong> immediately for assistance.
 
 <RelatedArticles category="account-security" />
