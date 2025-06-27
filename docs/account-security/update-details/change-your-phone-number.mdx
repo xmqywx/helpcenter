@@ -1,10 +1,12 @@
 ---
 id: change-your-phone-number
 title: Change your Phone Number
-sidebar_label: Change Phone Number
+sidebar_label: Change your Phone Number
 sidebar_position: 1
 description: "Step-by-step guide to change your registered phone number for SMS verification on CoinByte."
 ---
+
+import CoinByteButton from '@site/src/components/CoinByteButton'
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -53,8 +55,11 @@ If your number changes and you still have access to your old registered number, 
 
 <div style={{ marginTop: '1.5rem' }}></div>
 
+<CoinByteButton text="Change your Phone Number" link="https://coinbyte.com.au/en-us/user/bind-phone/" />
+
+
 <RoundStepList>
-  <li>Select <img src={useBaseUrl('/img/genralprofile-center-web')} alt="Web profile icon" width="25" /> in the right of header to open the <strong>Personal Center </strong>.</li>
+  <li>Select <img src={useBaseUrl('/img/genralprofile-center-web')} alt="Web profile icon" width="30" /> <strong>Profile</strong>in the right of header to open the <strong>Personal Center </strong>.</li>
   <li>Select <strong>Security Settings</strong>.</li>
   <li>Select <strong>Settings</strong> in <strong>SMS certification</strong>.</li>
   <li>Select <strong>Change</strong>.</li>
