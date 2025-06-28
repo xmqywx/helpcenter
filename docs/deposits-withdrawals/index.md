@@ -24,7 +24,7 @@ Each asset has specific deposit and withdrawal channels, processing times, and f
 
 <DocumentList category="deposits-withdrawals/deposit-fiat-asset" />
 
-## withdraw Fiat asset
+## Withdraw Fiat asset
 
 <DocumentList category="deposits-withdrawals/withdraw-fiat-asset" />
 
