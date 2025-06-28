@@ -13,33 +13,21 @@ import WarningBox from '@site/src/components/WarningBox';
 import RoundStepList from '@site/src/components/RoundStepList';
 import TickList from '@site/src/components/TickList';
 import RelatedArticles from '@site/src/components/RelatedArticles';
-
+import InfoBox from '@site/src/components/InfoBox';
 # Link a bank account
 
 If this is your first time making a withdrawal you’ll need to add a bank account before you can withdraw funds.
 
-<WarningBox>
-💡
-<TickList>
-<li><strong>Please Note:</strong> to protect your asset, you have to complete your first deposit (Minimum 10 AUD) to verify your bank account.</li>
-</TickList>
-</WarningBox>
 
-You can also remove an outdated bank account to avoid accidentally withdrawing to the wrong account.
-
-<TickList>
-<li>For personal accounts, withdrawals must be made to your personal bank account.</li>
-<li>For entity accounts, such as those belonging to a trust, company, or SMSF, withdrawals must go to the bank account linked to that entity.</li>
-</TickList>
 
 <WarningBox>
-💡
-<TickList>
+Please note:
 <li>Please ensure that you enter your bank details accurately. If you provide incorrect bank details and proceed with a withdrawal, recovering the funds (if possible) may take a considerable amount of time.</li>
 <li>For personal accounts, withdrawals must be made to your personal bank account.</li>
 <li>For entity accounts, such as those belonging to a trust, company, or SMSF, withdrawals must go to the bank account linked to that entity.</li>
-</TickList>
 </WarningBox>
+
+---
 
 ## How to link a bank account
 
@@ -47,6 +35,12 @@ You can also remove an outdated bank account to avoid accidentally withdrawing t
 <TabItem value="app" label="App">
 <div style={{ marginTop: '2.5rem' }}></div>
 
+### **App**
+
+<div style={{ marginTop: '1.5rem' }}></div>
+<InfoBox>
+<li>💡 To protect your asset, you have to complete your first deposit (Minimum 10 AUD) to verify your bank account.</li>
+</InfoBox>
 <RoundStepList>
 <li>Select <strong>Withdraw</strong> at the <strong>Dashboard</strong>.</li>
 <li>Select <strong>Fiat deposit</strong>, then select <strong>AUD</strong> or <strong>NZD</strong>.</li>
@@ -67,6 +61,12 @@ You can also remove an outdated bank account to avoid accidentally withdrawing t
 <TabItem value="web" label="Web">
 <div style={{ marginTop: '2.5rem' }}></div>
 
+### **Web**
+
+<div style={{ marginTop: '1.5rem' }}></div>
+<InfoBox>
+<li>💡To protect your asset, you have to complete your first deposit (Minimum 10 AUD) to verify your bank account.</li>
+</InfoBox>
 <RoundStepList>
 <li>Select <strong>Asset</strong> on the header.</li>
 <li>Select <strong>Withdraw</strong> on the left hand side menu.</li>
@@ -85,8 +85,10 @@ You can also remove an outdated bank account to avoid accidentally withdrawing t
 </TabItem>
 </Tabs>
 
-## How to remove a bank account (App only)
+---
 
+## How to remove a bank account (App only)
+You can also remove an outdated bank account to avoid accidentally withdrawing to the wrong account.
 Currently, removing bank account is temporarily only supported on App.
 <RoundStepList>
 <li>Select <strong>CoinByte icon</strong> <img src={useBaseUrl('/img/general/logo_app.png')} alt="logo" width="20" /> on the top left to open <strong>Personal center</strong>.</li>
