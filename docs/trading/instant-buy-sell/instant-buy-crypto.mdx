@@ -6,6 +6,7 @@ sidebar_position: 1
 description: "Buy crypto instantly with AUD or NZD on CoinByte using the App or Web platform."
 ---
 
+import CoinByteButton from '@site/src/components/CoinByteButton'
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -50,7 +51,7 @@ To perform trades, your base currency must match the cash balance in your accoun
 <li>Finish the deal.</li>
 
 <figure style={{ textAlign: 'center' }}>
-  <img src={useBaseUrl('/img/tradinig/instant-buy-sell/instant-buy-crypto/3.png')} alt="Finish buy CoinByte app" style={{ width: 300 }} />
+  <img src={useBaseUrl('/img/tradinig/instant-buy-sell/instant-buy-crypto/3.jpg')} alt="Finish buy CoinByte app" style={{ width: 300 }} />
 </figure>
 
 </RoundStepList>
@@ -70,6 +71,8 @@ To perform trades, your base currency must match the cash balance in your accoun
 
 <RoundStepList>
 <li>Select <strong>Buy/Sell</strong> on the header.</li>
+<CoinByteButton text="Buy/Sell" link="https://coinbyte.com.au/en-us/retail/" />
+
 <li>Select <strong>Buy</strong>.</li>
 <li>Select the <strong>Trading pairs (Quote Currency/Base Currency)</strong> on the top left of the chart. For example, BTC/AUD.</li>
 <li>Enter the amount of fiat asset you want to spend, or</li>
