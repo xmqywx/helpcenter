@@ -6,6 +6,7 @@ sidebar_position: 1
 description: "View and manage your completed and pending orders on CoinByte using the app or web platform."
 ---
 
+import CoinByteButton from '@site/src/components/CoinByteButton'
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -70,7 +71,7 @@ You can also view all your previous orders and account history if you download a
 ### **Web**
 
 <div style={{ marginBottom: '1.5rem' }}></div>
-
+<CoinByteButton text="View order" link="https://coinbyte.com.au/en-us/user/order/" />
 <RoundStepList>
 <li>Select <strong>Transaction History</strong><img src={useBaseUrl('/img/general/trade-history-web.png')} alt="trade history web" width="30" />  in the header.</li>
 <li>Switch between <strong>Buy/Sell</strong> and <strong>Exchange</strong> at the left of the page.</li>
