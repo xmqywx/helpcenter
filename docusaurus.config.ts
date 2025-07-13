@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'CoinByte',
   tagline: 'Find answers to your questions',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
 
   // S3 deployment configuration
   url: 'http://helpcentergithub.s3-website.ap-east-1.amazonaws.com',
