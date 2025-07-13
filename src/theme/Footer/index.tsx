@@ -99,7 +99,7 @@ export default function FooterWrapper(props: Props): ReactNode {
                 <div className={styles.img}>
                     <img width="133" src={logoUrl} alt="CoinByte Logo" />
                 </div>
-                <h4>@2024 CoinByte.com</h4>
+                <h4>© 2025 CoinByte. All rights reserved.</h4>
             </div>
         </div>
 
