@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'CoinByte',
-  tagline: 'Find answers to your questions',
+  title: 'CoinByte Support Center',
+  tagline: 'Customer service and helpdesk',
   favicon: 'img/favicon.png',
 
   // S3 deployment configuration
