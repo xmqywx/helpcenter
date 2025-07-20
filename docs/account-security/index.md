@@ -9,31 +9,31 @@ import DocumentList from '@site/src/components/DocumentList';
 # Account, security, verification
 
 Learn how to create, manage, and secure your CoinByte account, including security settings and identity verification.
-<br>
+<br/>
 
 <a href="/docs/category/create-coinbyte-account" style={{ color: 'black' }}>
   <h2>Create CoinByte Account</h2>
 </a>
 <DocumentList category="account-security/create-coinbyte-account" />
-  <br>
+  <br/>
   
 <a href="/docs/category/verification-and-security" style={{ color: 'black' }}>
   <h2>Verification and Security</h2>
 </a>
 <DocumentList category="account-security/verification-and-security" />
-<br>
+<br/>
   
 <a href="/docs/category/update-details" style={{ color: 'black' }}>
   <h2>Update Details</h2>
 </a>
 <DocumentList category="account-security/update-details" />
-<br>
+<br/>
   
 <a href="/docs/category/faq" style={{ color: 'black' }}>
  <h2>FAQ</h2>
 </a>
 <DocumentList category="account-security/FAQ" />
-<br>
+<br/>
 
   <h2>Contact Support</h2>
 If you have any questions about your account or security, please feel free to [contact our customer support team](mailto:cs@coinbyte.com.au ), who will be happy to assist you. 
