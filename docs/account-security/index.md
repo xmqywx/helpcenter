@@ -11,7 +11,7 @@ import DocumentList from '@site/src/components/DocumentList';
 Learn how to create, manage, and secure your CoinByte account, including security settings and identity verification.
 
 
-<a href="/docs/category/create-coinbyte-account" style={{ color: 'black', textDecoration: 'none' }}>
+<a href="/docs/category/create-coinbyte-account" style={{ color: 'black' }}>
   <h2>Create CoinByte Account</h2>
 </a>
 <DocumentList category="account-security/create-coinbyte-account" />
@@ -21,12 +21,14 @@ Learn how to create, manage, and secure your CoinByte account, including securit
 </a>
 <DocumentList category="account-security/verification-and-security" />
 
-## [Update Details](/docs/category/update-details)
-
+<a href="/docs/category/update-details" style={{ color: 'black' }}>
+  <h2>Update Details</h2>
+</a>
 <DocumentList category="account-security/update-details" />
 
-## [Frequently Asked Questions](/docs/category/faq)
-
+<a href="/docs/category/faq" style={{ color: 'black' }}>
+** FAQs
+</a>
 <DocumentList category="account-security/FAQ" />
 
 
