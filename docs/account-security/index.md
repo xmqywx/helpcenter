@@ -11,7 +11,7 @@ import DocumentList from '@site/src/components/DocumentList';
 Learn how to create, manage, and secure your CoinByte account, including security settings and identity verification.
 
 
-## Create CoinByte Account
+## <a herf="/docs/category/create-coinbyte-account">Create CoinByte Account</a>
 
 <DocumentList category="account-security/create-coinbyte-account" />
 
