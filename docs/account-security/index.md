@@ -25,7 +25,7 @@ Learn how to create, manage, and secure your CoinByte account, including securit
 
 ## [Frequently Asked Questions](/docs/category/faq)
 
-<DocumentList category="account-security/faq" />
+<DocumentList category="account-security/FAQ" />
 
 
 ## Contact Support
