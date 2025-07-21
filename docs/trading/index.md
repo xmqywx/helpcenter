@@ -24,11 +24,11 @@ Learn how to trade cryptocurrencies on the CoinByte platform, master various tra
 <DocumentList category="trading/exchange" />
 <br/>
   
-## FAQ
-<a href="/docs/category/FAQ" style={{ color: 'black' }}>
+
+<a href="/docs/category/faq-1" style={{ color: 'black' }}>
   <h2>FAQ</h2>
   </a>
-<DocumentList category="trading/faq-1" />
+<DocumentList category="trading/faq" />
 <br/>
   
 ## Contact Support
