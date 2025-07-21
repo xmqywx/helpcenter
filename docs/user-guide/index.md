@@ -9,21 +9,26 @@ import DocumentList from '@site/src/components/DocumentList';
 # User Guide
 
 Learn how to navigate and effectively use the CoinByte platform, including its features, settings, and tools.
+<br/>
 
 
-
-## Tools
-
+<a href="/docs/category/tools" style={{ color: 'black' }}>
+  <h2>Tools</h2>
+  </a>
 <DocumentList category="user-guide/tools" />
-
-## About CoinByte
-
+<br/>
+  
+<a href="/docs/category/about-coinbyte" style={{ color: 'black' }}>
+  <h2>About CoinByte</h2>
+  </a>
 <DocumentList category="user-guide/about-coinbyte" />
-
-## Legal and compliance
-
+<br/>
+  
+<a href="/docs/category/legal" style={{ color: 'black' }}>
+  <h2>Legal and compliance</h2>
+  </a>
 <DocumentList category="user-guide/legal" />
-
+<br/>
 
 
 ## Contact Support
