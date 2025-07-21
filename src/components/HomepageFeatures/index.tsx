@@ -43,6 +43,13 @@ const ArticleCollections: ArticleCollection[] = [
     link: '/docs/user-guide',
     imageUrl: '/img/icon-guide.png',
   },
+  {
+    title: 'Announcements',
+    description: 'Get the latest updates, news, and important announcements about CoinByte.',
+    category: 'announcements',
+    link: '/docs/announcements',
+    imageUrl: '/img/icon-announcements.svg',
+  },
 ];
 
 interface ArticleCardProps extends ArticleCollection {
@@ -53,7 +60,7 @@ function ArticleCard({title, description, count, link, imageUrl}: ArticleCardPro
   const imagePath = useBaseUrl(imageUrl);
 
   return (
-    <div className={clsx('col col--3', styles.featureCard)}>
+    <div className={clsx('col col--4', styles.featureCard)}>
       <Link to={link} className={styles.cardLink}>
         <div className={styles.cardContent}>
           <div className={styles.cardHeader}>
@@ -109,7 +116,8 @@ export default function HomepageFeatures(): ReactNode {
         { ...ArticleCollections[0], count: 6 },
         { ...ArticleCollections[1], count: 0 },
         { ...ArticleCollections[2], count: 0 },
-        { ...ArticleCollections[3], count: 0 }
+        { ...ArticleCollections[3], count: 0 },
+        { ...ArticleCollections[4], count: 0 }
       ];
       setCollectionsWithCount(fallbackCounts);
     }

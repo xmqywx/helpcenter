@@ -1,30 +1,20 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Link from '@docusaurus/Link';
-import { useAllDocsData } from '@docusaurus/plugin-content-docs/client';
+import { useDocsSidebar } from '@docusaurus/plugin-content-docs/client';
+import type { PropSidebarItem } from '@docusaurus/plugin-content-docs';
 
 interface DocumentListProps {
   category: string;
 }
 
-type DocItem = any;
-
-// 辅助函数：将文件名转换为可读标题
-function formatTitle(filename: string): string {
-  return filename
-    .replace(/-/g, ' ')
-    .replace(/\b\w/g, l => l.toUpperCase())
-    .replace(/\bKyc\b/g, 'KYC')
-    .replace(/\bApi\b/g, 'API')
-    .replace(/\bSms\b/g, 'SMS')
-    .replace(/\bAud\b/g, 'AUD')
-    .replace(/\bNzd\b/g, 'NZD')
-    .replace(/\bApp\b/g, 'App')
-    .replace(/\bOsko\b/g, 'Osko')
-    .replace(/\bPayid\b/g, 'PayID')
-    .replace(/\bPoli\b/g, 'POLi');
+interface DocInfo {
+  id: string;
+  href: string;
+  label: string;
+  customProps?: any;
 }
 
-// 辅助函数：根据文档ID生成描述
+// 辅助函数：生成描述
 function generateDescription(docId: string): string {
   const filename = docId.split('/').pop() || '';
   
@@ -49,7 +39,11 @@ function generateDescription(docId: string): string {
     'instant': 'Learn about instant buy and sell features',
     'limit': 'Learn about limit orders',
     'market': 'Learn about market orders',
-    'spot': 'Learn about spot trading'
+    'spot': 'Learn about spot trading',
+    'maintenance': 'Information about platform maintenance',
+    'regulatory': 'Important regulatory and compliance updates',
+    'features': 'Latest features and improvements',
+    'sorting': 'Testing document sorting functionality'
   };
   
   // 查找匹配的关键词
@@ -63,37 +57,79 @@ function generateDescription(docId: string): string {
   return 'Learn more about this topic.';
 }
 
-export default function DocumentList({ category }: DocumentListProps): React.ReactNode {
-  const [error, setError] = useState<string | null>(null);
+// 递归提取指定类别下的所有文档
+function extractDocsFromCategory(items: PropSidebarItem[], targetCategory: string): DocInfo[] {
+  const docs: DocInfo[] = [];
   
-  try {
-    // 使用 Docusaurus v3 中的 useAllDocsData 钩子
-    const allDocsData = useAllDocsData() as any;
+  function traverse(items: PropSidebarItem[], currentPath: string[] = []) {
+    for (const item of items) {
+      if (item.type === 'category') {
+        const newPath = [...currentPath, item.label];
+        const categoryPath = newPath.join('/').toLowerCase().replace(/\s+/g, '-');
+        
+        // 检查是否是目标类别
+        if (categoryPath === targetCategory || currentPath.length === 0) {
+          // 如果是目标类别，收集其中的文档
+          if (categoryPath === targetCategory) {
+            for (const subItem of item.items) {
+              if ((subItem.type === 'link' && subItem.docId) || subItem.type === 'link') {
+                docs.push({
+                  id: subItem.docId || subItem.href,
+                  href: subItem.href,
+                  label: subItem.label,
+                  customProps: subItem.customProps
+                });
+              }
+            }
+          } else {
+            // 继续遍历子类别
+            traverse(item.items, newPath);
+          }
+        }
+      }
+    }
+  }
+  
+  traverse(items);
+  return docs;
+}
 
-    if (!allDocsData) {
-      console.warn('No docs data available');
-      return <div>No document data available.</div>;
+export default function DocumentList({ category }: DocumentListProps): React.ReactNode {
+  const sidebar = useDocsSidebar();
+  
+  if (!sidebar) {
+    return <div>No sidebar data available.</div>;
+  }
+  
+  // 从 sidebar 中提取指定类别的文档
+  // 注意：category 参数可能包含多级路径，如 "account-security/create-coinbyte-account"
+  const categoryDocs = extractDocsFromCategory(sidebar.items, category);
+  
+  if (categoryDocs.length === 0) {
+    // 如果没有找到，尝试在所有文档中查找匹配的
+    const allDocs: DocInfo[] = [];
+    
+    function extractAllDocs(items: PropSidebarItem[]) {
+      for (const item of items) {
+        if (item.type === 'link' && item.docId) {
+          if (item.docId.startsWith(category + '/')) {
+            allDocs.push({
+              id: item.docId,
+              href: item.href,
+              label: item.label,
+              customProps: item.customProps
+            });
+          }
+        } else if (item.type === 'category') {
+          extractAllDocs(item.items);
+        }
+      }
     }
     
-    // 获取默认的文档数据
-    const docsData = allDocsData.default;
+    extractAllDocs(sidebar.items);
     
-    if (!docsData || !docsData.versions || !docsData.versions[0] || !docsData.versions[0].docs) {
-      console.warn('Invalid docs data structure');
-      return <div>Unable to find documents data.</div>;
-    }
-    
-    const docs = docsData.versions[0].docs as Record<string, DocItem>;
-    
-    // 过滤出指定目录下的文档，排除index.md
-    const filteredDocs = Object.values(docs).filter(doc => 
-      doc.id.startsWith(category + '/') && !doc.id.endsWith('/index')
-    ).sort((a, b) => {
-      // 尝试按照sidebar_position排序，如果它存在于metadata或frontMatter中
-      const posA = a.metadata?.sidebar_position ?? a.frontMatter?.sidebar_position ?? a.sidebar_position ?? 999;
-      const posB = b.metadata?.sidebar_position ?? b.frontMatter?.sidebar_position ?? b.sidebar_position ?? 999;
-      return posA - posB;
-    });
+    // 过滤掉 index 文档
+    const filteredDocs = allDocs.filter(doc => !doc.id.endsWith('/index'));
     
     if (filteredDocs.length === 0) {
       return <div className="margin-bottom--lg">No documents found in this category.</div>;
@@ -102,23 +138,19 @@ export default function DocumentList({ category }: DocumentListProps): React.Rea
     return (
       <div className="row category-list">
         {filteredDocs.map((doc) => {
-          // 从文档ID中提取文件名并格式化为标题
-          const filename = doc.id.split('/').pop() || '';
-          const title = formatTitle(filename);
-          const description = generateDescription(doc.id);
-          const path = doc.path || doc.permalink || `#${doc.id}`;
+          const description = doc.customProps?.description || generateDescription(doc.id);
           
           return (
             <div className="col col--4 margin-bottom--lg" key={doc.id}>
               <div className="card">
                 <div className="card__body">
-                  <h3>{title}</h3>
+                  <h3>{doc.label}</h3>
                   <p>{description}</p>
                 </div>
                 <div className="card__footer">
                   <Link 
                     className="button button--primary button--block" 
-                    to={path}
+                    to={doc.href}
                   >
                     View Details
                   </Link>
@@ -129,18 +161,32 @@ export default function DocumentList({ category }: DocumentListProps): React.Rea
         })}
       </div>
     );
-  } catch (error) {
-    console.error("Error in DocumentList component:", error);
-    // 将错误信息更新到状态
-    useEffect(() => {
-      setError(error instanceof Error ? error.message : String(error));
-    }, [error]);
-    
-    return (
-      <div className="alert alert--danger margin-bottom--lg">
-        <p>Failed to load documents. Please try again later.</p>
-        {error && <details><summary>Error details</summary><pre>{error}</pre></details>}
-      </div>
-    );
   }
-} 
+  
+  return (
+    <div className="row category-list">
+      {categoryDocs.map((doc) => {
+        const description = doc.customProps?.description || generateDescription(doc.id);
+        
+        return (
+          <div className="col col--4 margin-bottom--lg" key={doc.id}>
+            <div className="card">
+              <div className="card__body">
+                <h3>{doc.label}</h3>
+                <p>{description}</p>
+              </div>
+              <div className="card__footer">
+                <Link 
+                  className="button button--primary button--block" 
+                  to={doc.href}
+                >
+                  View Details
+                </Link>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
