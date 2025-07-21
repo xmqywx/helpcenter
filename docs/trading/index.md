@@ -9,21 +9,28 @@ import DocumentList from '@site/src/components/DocumentList';
 # Trading Guide
 
 Learn how to trade cryptocurrencies on the CoinByte platform, master various trading tools and strategies.
+<br/>
 
 
-
-## Instant Buy and Sell
-
+<a href="/docs/category/instant-buy-sell" style={{ color: 'black' }}>
+  <h2>Instant Buy and Sell</h2>
+  </a>
 <DocumentList category="trading/instant-buy-sell" />
-
-## Exchange/Trade
-
+<br/>
+  
+<a href="/docs/category/exchange" style={{ color: 'black' }}>
+  <h2>Exchange / Trade</h2>
+  </a>
 <DocumentList category="trading/exchange" />
-
+<br/>
+  
 ## FAQ
-
-<DocumentList category="trading/faq" />
-
+<a href="/docs/category/FAQ" style={{ color: 'black' }}>
+  <h2>FAQ</h2>
+  </a>
+<DocumentList category="trading/faq-1" />
+<br/>
+  
 ## Contact Support
 
 If you have any questions about your account or security, please feel free to [contact our customer support team](mailto:cs@coinbyte.com.au ), who will be happy to assist you.
