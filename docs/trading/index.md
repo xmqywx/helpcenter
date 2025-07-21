@@ -25,7 +25,7 @@ Learn how to trade cryptocurrencies on the CoinByte platform, master various tra
 <br/>
   
 
-<a href="/docs/category/faq-1" style={{ color: 'black' }}>
+<a href="/docs/category/faq-2" style={{ color: 'black' }}>
   <h2>FAQ</h2>
   </a>
 <DocumentList category="trading/faq" />
