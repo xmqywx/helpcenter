@@ -19,27 +19,38 @@ CoinByte supports deposits and withdrawals for various Crypto:
 </TickList>
 
 Each asset has specific deposit and withdrawal channels, processing times, and fee structures.
+<br/>
 
-## Deposti Fiat asset
-
+<a href="/docs/category/deposit-fiat-asset" style={{ color: 'black' }}>
+  <h2>Deposti Fiat Asset</h2>
+  </a>
 <DocumentList category="deposits-withdrawals/deposit-fiat-asset" />
-
-## Withdraw Fiat asset
-
+<br/>
+  
+<a href="/docs/category/withdraw-fiat-asset" style={{ color: 'black' }}>
+  <h2>Withdraw Fiat Asset</h2>
+    </a>
 <DocumentList category="deposits-withdrawals/withdraw-fiat-asset" />
-
-## Deposti Crypto
-
+<br/>
+  
+<a href="/docs/category/deposit-crypto" style={{ color: 'black' }}>
+  <h2>Deposti Crypto</h2>
+    </a>
 <DocumentList category="deposits-withdrawals/deposit-crypto" />
-
-## Withdraw Crypto
-
+<br/>
+  
+<a href="/docs/category/withdraw-crypto" style={{ color: 'black' }}>
+  <h2>Withdraw Crypto</h2>
+    </a>
 <DocumentList category="deposits-withdrawals/withdraw-crypto" />
-
-## FAQ
-
+<br/>
+  
+<a href="/docs/category/FAQ" style={{ color: 'black' }}>
+  <h2>FAQ</h2>
+    </a>
 <DocumentList category="deposits-withdrawals/FAQ" />
-
+<br/>
+  
 ## Contact Support
 
 If you have any questions about using the CoinByte platform, please feel free to [contact our customer support team](mailto:cs@coinbyte.com.au), who will be happy to assist you.
