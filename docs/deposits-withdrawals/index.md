@@ -45,7 +45,7 @@ Each asset has specific deposit and withdrawal channels, processing times, and f
 <DocumentList category="deposits-withdrawals/withdraw-crypto" />
 <br/>
   
-<a href="/docs/category/FAQ" style={{ color: 'black' }}>
+<a href="/docs/category/faq-1" style={{ color: 'black' }}>
   <h2>FAQ</h2>
     </a>
 <DocumentList category="deposits-withdrawals/FAQ" />
