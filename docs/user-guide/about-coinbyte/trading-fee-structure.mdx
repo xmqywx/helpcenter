@@ -13,7 +13,7 @@ import RelatedArticles from '@site/src/components/RelatedArticles';
 
 CoinByte offers a competitive and transparent trading fee model. Below is a breakdown of our trading fee structure across different trading modes:
 
-<div style={{ overflowX: 'auto', marginTop: '2rem', marginBottom: '2rem', maxWidth: '100%' }}>
+<div style={{ overflowX: 'auto', marginTop: '2rem', marginBottom: '2rem' }}>
   <table style={{ borderCollapse: 'collapse', width: '100%', fontSize: '0.95rem' }}>
     <thead>
       <tr style={{ backgroundColor: '#01c19a', color: '#fff', fontWeight: 'bold', textAlign: 'center' }}>
@@ -67,21 +67,22 @@ CoinByte offers a competitive and transparent trading fee model. Below is a brea
 
 <RelatedArticles category="user-guide" />
 
-<!-- Mobile responsiveness styles -->
+<!-- Mobile responsiveness styles (with max-width and adjustment) -->
 <style>
   @media screen and (max-width: 768px) {
     table {
-      font-size: 0.85rem;  /* Slightly smaller font on mobile */
+      font-size: 0.85rem;  /* Adjust font size for mobile */
+      width: 100%;  /* Ensure table fits within the screen */
     }
 
     th, td {
-      padding: 10px;  /* Adjust padding for smaller screens */
+      padding: 8px 6px;  /* Adjust padding for smaller screens */
     }
 
-    /* Ensures table fits within screen on mobile */
+    /* Ensures table fits within screen width without overflow */
     div {
-      max-width: 100%; 
+      max-width: 100%;
+      overflow-x: hidden;
     }
   }
 </style>
-
