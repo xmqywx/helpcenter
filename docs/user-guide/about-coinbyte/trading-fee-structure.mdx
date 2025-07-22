@@ -68,22 +68,18 @@ CoinByte offers a competitive and transparent trading fee model. Below is a brea
 
 <RelatedArticles category="user-guide" />
 
-<!-- Mobile responsiveness styles (with max-width and adjustment) -->
-<style>
-  @media screen and (max-width: 768px) {
-    table {
-      font-size: 0.85rem;  /* Adjust font size for mobile */
-      width: 100%;  /* Ensure table fits within the screen */
-    }
+<!-- Adjust font size and padding for mobile devices using inline styles -->
+<script>
+  if (window.innerWidth <= 768) {
+    document.querySelectorAll('table').forEach((table) => {
+      table.style.fontSize = '0.85rem';  // Smaller font size for mobile
+    });
 
-    th, td {
-      padding: 8px 6px;  /* Adjust padding for smaller screens */
-    }
+    document.querySelectorAll('th, td').forEach((cell) => {
+      cell.style.padding = '8px 6px';  // Adjust padding for smaller screens
+    });
 
-    /* Ensures table fits within screen width without overflow */
-    div {
-      max-width: 100%; 
-      overflow-x: hidden;
-    }
+    document.querySelector('div').style.maxWidth = '100%';
+    document.querySelector('div').style.overflowX = 'hidden';
   }
-</style>
+</script>
