@@ -8,13 +8,14 @@ description: "View detailed information about CoinByte’s fee structure for Spo
 
 import InfoBox from '@site/src/components/InfoBox';
 import RelatedArticles from '@site/src/components/RelatedArticles';
+import ResponsiveTable from '@site/src/components/ResponsiveTable';  // 导入组件
 
 # **Trading Fee Structure**
 
 CoinByte offers a competitive and transparent trading fee model. Below is a breakdown of our trading fee structure across different trading modes:
 
-<!-- Use pure HTML styles to avoid JavaScript expression parsing errors -->
-<div style="overflow-x: auto; margin-top: 2rem; margin-bottom: 2rem; max-width: 100%;">
+<!-- 使用 ResponsiveTable 组件来包裹表格 -->
+<ResponsiveTable>
   <table style="border-collapse: collapse; width: 100%; font-size: 0.95rem;">
     <thead>
       <tr style="background-color: #01c19a; color: #fff; font-weight: bold; text-align: center;">
@@ -60,7 +61,7 @@ CoinByte offers a competitive and transparent trading fee model. Below is a brea
       </tr>
     </tbody>
   </table>
-</div>
+</ResponsiveTable>
 
 <InfoBox>
 <strong>Note:</strong> Spread is the difference between buy and sell price. Please refer to the <a href="/docs/trading/FAQ/spread"><strong>Spread</strong></a> article for more information.
@@ -68,18 +69,3 @@ CoinByte offers a competitive and transparent trading fee model. Below is a brea
 
 <RelatedArticles category="user-guide" />
 
-<!-- Adjust font size and padding for mobile devices using inline styles -->
-<script>
-  if (window.innerWidth <= 768) {
-    document.querySelectorAll('table').forEach((table) => {
-      table.style.fontSize = '0.85rem';  // Smaller font size for mobile
-    });
-
-    document.querySelectorAll('th, td').forEach((cell) => {
-      cell.style.padding = '8px 6px';  // Adjust padding for smaller screens
-    });
-
-    document.querySelector('div').style.maxWidth = '100%';
-    document.querySelector('div').style.overflowX = 'hidden';
-  }
-</script>
