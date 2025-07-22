@@ -3,7 +3,7 @@ id: fee-structure
 title: Trading Fee Structure
 sidebar_label: Trading Fee
 sidebar_position: 10
-description: "View detailed information about CoinByteâ€™s fee structure for Spot Market, Instant Buy, Sell."
+description: "View detailed information about CoinByte’s fee structure for Spot Market, Instant Buy, Sell."
 ---
 
 import InfoBox from '@site/src/components/InfoBox';
@@ -24,10 +24,10 @@ CoinByte offers a competitive and transparent trading fee model. Below is a brea
     </thead>
     <tbody>
       <tr style={{ backgroundColor: '#fff' }}>
-        <td style={{ padding: '12px 10px', border: '1px solid #ddd', verticalAlign: 'medium', whiteSpace: 'nowrap' }}>
+        <td style={{ padding: '12px 10px', border: '1px solid #ddd', verticalAlign: 'middle', whiteSpace: 'nowrap' }}>
           Spot Market
         </td>
-        <td style={{ padding: '12px 10px', border: '1px solid #ddd', verticalAlign: 'medium', whiteSpace: 'nowrap' }}>
+        <td style={{ padding: '12px 10px', border: '1px solid #ddd', verticalAlign: 'middle', whiteSpace: 'nowrap' }}>
           Taker: 0.1% + spread  
           <br/>
           Maker: 0.1% + spread
@@ -43,10 +43,10 @@ CoinByte offers a competitive and transparent trading fee model. Below is a brea
         </td>
       </tr>
       <tr style={{ backgroundColor: '#f6fafa' }}>
-        <td style={{ padding: '12px 10px', border: '1px solid #ddd', verticalAlign: 'medium', whiteSpace: 'nowrap' }}>
+        <td style={{ padding: '12px 10px', border: '1px solid #ddd', verticalAlign: 'middle', whiteSpace: 'nowrap' }}>
           Instant Buy, Sell & Swap
         </td>
-        <td style={{ padding: '12px 10px', border: '1px solid #ddd', verticalAlign: 'medium', whiteSpace: 'nowrap' }}>
+        <td style={{ padding: '12px 10px', border: '1px solid #ddd', verticalAlign: 'middle', whiteSpace: 'nowrap' }}>
           Buy: 0%  
           <br/>
           Sell: 0%  
@@ -66,8 +66,20 @@ CoinByte offers a competitive and transparent trading fee model. Below is a brea
 </InfoBox>
 
 <RelatedArticles category="user-guide" />
-<div style={{ overflowX: 'auto', marginTop: '2rem', marginBottom: '2rem' }}>
-  <table style={{ borderCollapse: 'collapse', width: '100%', fontSize: '0.95rem' }}>
+
+<!-- Mobile specific styles for responsiveness -->
+<div style={{ 
+    overflowX: 'auto', 
+    marginTop: '2rem', 
+    marginBottom: '2rem',
+    fontSize: '0.95rem',
+    whiteSpace: 'nowrap',
+  }}>
+  <table style={{
+    borderCollapse: 'collapse', 
+    width: '100%', 
+    fontSize: '0.95rem',
+  }}>
     <thead>
       <tr style={{ backgroundColor: '#01c19a', color: '#fff', fontWeight: 'bold', textAlign: 'center' }}>
         <th style={{ padding: '12px 10px', whiteSpace: 'nowrap' }}>Type</th>
@@ -77,10 +89,10 @@ CoinByte offers a competitive and transparent trading fee model. Below is a brea
     </thead>
     <tbody>
       <tr style={{ backgroundColor: '#fff' }}>
-        <td style={{ padding: '12px 10px', border: '1px solid #ddd', verticalAlign: 'medium', whiteSpace: 'nowrap' }}>
+        <td style={{ padding: '12px 10px', border: '1px solid #ddd', verticalAlign: 'middle', whiteSpace: 'nowrap' }}>
           Spot Market
         </td>
-        <td style={{ padding: '12px 10px', border: '1px solid #ddd', verticalAlign: 'medium', whiteSpace: 'nowrap' }}>
+        <td style={{ padding: '12px 10px', border: '1px solid #ddd', verticalAlign: 'middle', whiteSpace: 'nowrap' }}>
           Taker: 0.1% + spread  
           <br/>
           Maker: 0.1% + spread
@@ -96,10 +108,10 @@ CoinByte offers a competitive and transparent trading fee model. Below is a brea
         </td>
       </tr>
       <tr style={{ backgroundColor: '#f6fafa' }}>
-        <td style={{ padding: '12px 10px', border: '1px solid #ddd', verticalAlign: 'medium', whiteSpace: 'nowrap' }}>
+        <td style={{ padding: '12px 10px', border: '1px solid #ddd', verticalAlign: 'middle', whiteSpace: 'nowrap' }}>
           Instant Buy, Sell & Swap
         </td>
-        <td style={{ padding: '12px 10px', border: '1px solid #ddd', verticalAlign: 'medium', whiteSpace: 'nowrap' }}>
+        <td style={{ padding: '12px 10px', border: '1px solid #ddd', verticalAlign: 'middle', whiteSpace: 'nowrap' }}>
           Buy: 0%  
           <br/>
           Sell: 0%  
@@ -119,23 +131,3 @@ CoinByte offers a competitive and transparent trading fee model. Below is a brea
 </InfoBox>
 
 <RelatedArticles category="user-guide" />
-
-<!-- Add the following CSS to ensure responsiveness -->
-<style>
-  /* For mobile devices */
-  @media screen and (max-width: 768px) {
-    table {
-      font-size: 0.85rem;
-    }
-
-    th, td {
-      padding: 8px 6px;
-    }
-
-    /* Allow horizontal scrolling on mobile */
-    .table-container {
-      overflow-x: auto;
-    }
-  }
-</style>
-
