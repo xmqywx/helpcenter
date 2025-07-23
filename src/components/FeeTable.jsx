@@ -5,42 +5,67 @@ export default function FeeTable() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth <= 768);
-    check();
-    window.addEventListener('resize', check);
-    return () => window.removeEventListener('resize', check);
+    const mq = window.matchMedia('(max-width: 768px)');
+    const handler = e => setIsMobile(e.matches);
+    handler(mq);
+    mq.addEventListener('change', handler);
+    return () => mq.removeEventListener('change', handler);
   }, []);
+
+  // 桌面端保持原有大小
+  const baseFont = isMobile ? '0.78rem' : '0.95rem';
+  const expFont  = isMobile ? '0.78rem' : '0.92rem';
 
   const tableStyle = {
     borderCollapse: 'collapse',
     width: '100%',
     tableLayout: isMobile ? 'fixed' : 'auto',
-    fontSize: isMobile ? '0.82rem' : '0.95rem',
+    fontSize: baseFont,
   };
 
+  // 自定义列宽比例，移动端放大前两列
+  const colTypeWidth = isMobile ? '24%' : '15%';
+  const colFeeWidth  = isMobile ? '28%' : '20%';
+  const colExpWidth  = isMobile ? '48%' : '65%';
+
   const thBase = {
-    padding: isMobile ? '8px 6px' : '12px 10px',
+    padding: isMobile ? '6px 5px' : '12px 10px',
     backgroundColor: '#01c19a',
     color: '#fff',
     fontWeight: 'bold',
     textAlign: 'center',
+    lineHeight: 1.3,
+    wordBreak: 'break-word',
   };
 
   const tdBase = {
-    padding: isMobile ? '8px 6px' : '12px 10px',
+    padding: isMobile ? '6px 5px' : '12px 10px',
     border: '1px solid #ddd',
     verticalAlign: 'middle',
-    whiteSpace: isMobile ? 'normal' : 'nowrap',   // 允许移动端换行
+    lineHeight: 1.4,
     wordBreak: 'break-word',
+    whiteSpace: isMobile ? 'normal' : 'nowrap',
     textAlign: 'left',
-    fontSize: isMobile ? '0.82rem' : '0.92rem',
+    fontSize: expFont,
   };
 
   return (
-    <div style={{ marginTop: '2rem', marginBottom: '2rem', overflowX: 'hidden', maxWidth: '100%' }}>
+    <div
+      style={{
+        marginTop: '2rem',
+        marginBottom: '2rem',
+        overflowX: isMobile ? 'hidden' : 'visible',
+        maxWidth: '100%',
+      }}
+    >
       <table style={tableStyle}>
+        <colgroup>
+          <col style={{ width: colTypeWidth }} />
+          <col style={{ width: colFeeWidth }} />
+          <col style={{ width: colExpWidth }} />
+        </colgroup>
         <thead>
-          <tr style={{ backgroundColor: '#01c19a' }}>
+          <tr>
             <th style={thBase}>Type</th>
             <th style={thBase}>Fee</th>
             <th style={{ ...thBase, textAlign: 'left' }}>Explanation</th>
