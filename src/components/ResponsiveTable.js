@@ -1,3 +1,5 @@
+// src/components/ResponsiveTable.js
+
 import React, { useEffect } from 'react';
 
 const ResponsiveTable = ({ children }) => {
@@ -5,6 +7,8 @@ const ResponsiveTable = ({ children }) => {
     if (window.innerWidth <= 768) {
       document.querySelectorAll('table').forEach((table) => {
         table.style.fontSize = '0.85rem';  // Smaller font size for mobile
+        table.style.width = '100%';  // Ensure table fits within the screen
+        table.style.tableLayout = 'fixed';  // Prevent table overflow
       });
 
       document.querySelectorAll('th, td').forEach((cell) => {
@@ -12,7 +16,6 @@ const ResponsiveTable = ({ children }) => {
       });
 
       document.querySelector('div').style.maxWidth = '100%';
-      document.querySelector('div').style.overflowX = 'hidden';
     }
   }, []);
 
@@ -24,3 +27,4 @@ const ResponsiveTable = ({ children }) => {
 };
 
 export default ResponsiveTable;
+
