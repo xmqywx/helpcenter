@@ -65,23 +65,6 @@ const config: Config = {
     ],
   ],
 
-  plugins: [
-    [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
-      {
-        hashed: true,
-        language: ["en", "zh"],
-        highlightSearchTermsOnTargetPage: true,
-        explicitSearchResultPath: true,
-        docsRouteBasePath: "/docs",
-        searchResultLimits: 8,
-        searchResultContextMaxLength: 50,
-        hideSearchBarWithNoSearchContext: false,
-        searchBarPosition: 'auto',
-      },
-    ],
-  ],
-
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',

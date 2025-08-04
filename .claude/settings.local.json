@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "WebFetch(domain:aws.amazon.com)",
+      "WebFetch(domain:google.github.io)"
+    ],
+    "deny": []
+  }
+}
