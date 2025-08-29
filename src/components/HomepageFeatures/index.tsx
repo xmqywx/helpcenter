@@ -137,7 +137,7 @@ function renderFeatureSection(collections: ArticleCardProps[]) {
   return (
     <section className={styles.features}>
       <div className="container">
-        <h2 className={styles.sectionTitle}>Advice and answers from the CoinByte Team</h2>
+        <h2 className={styles.sectionTitle}>Find answers from the CoinByte Team</h2>
         <div className="row">
           {collections.map((props, idx) => (
             <ArticleCard key={idx} {...props} />
