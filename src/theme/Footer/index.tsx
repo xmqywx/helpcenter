@@ -26,7 +26,7 @@ export default function FooterWrapper(props: Props): ReactNode {
     </li>
   );
 
- // Footer link data based on provided HTML
+// Footer link data based on provided HTML
   const footerLinks = {
     about: [
       { label: 'About us', href: 'https://coinbyte.com.au/en-us/about/' },
@@ -65,10 +65,10 @@ export default function FooterWrapper(props: Props): ReactNode {
     ],
     sellCrypto: [
         { label: 'Sell Bitcoin', href: 'https://coinbyte.com.au/en-us/retail/btc_aud?isBuy=false' },
-        { label: 'Sell Ethereum', href: 'https://coinbyte.com.au/en-us/retail/eth_aud?isBuy=false'' },
-        { label: 'Sell USDT', href: 'https://coinbyte.com.au/en-us/retail/usdt_aud?isBuy=false'' },
-        { label: 'Sell XRP', href: 'https://coinbyte.com.au/en-us/retail/xrp_aud?isBuy=false'' },
-        { label: 'Sell SOL', href: 'https://coinbyte.com.au/en-us/retail/sol_aud?isBuy=false'' },
+        { label: 'Sell Ethereum', href: 'https://coinbyte.com.au/en-us/retail/eth_aud?isBuy=false' },
+        { label: 'Sell USDT', href: 'https://coinbyte.com.au/en-us/retail/usdt_aud?isBuy=false' },
+        { label: 'Sell XRP', href: 'https://coinbyte.com.au/en-us/retail/xrp_aud?isBuy=false' },
+        { label: 'Sell SOL', href: 'https://coinbyte.com.au/en-us/retail/sol_aud?isBuy=false' },
     ],
     trade: [
         { label: 'BTC/AUD', href: 'https://coinbyte.com.au/en-us/exchange/btc_aud?isBuy=true' }, 
