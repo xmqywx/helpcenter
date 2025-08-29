@@ -118,7 +118,7 @@ Icon font setup is required for community icons
   display: flex;
   flex: 1 1 auto;
   flex-wrap: wrap;
-  column-gap: 24px;        /* 32px -> 24px */
+  column-gap: 18px;        /* 32px -> 24px */
   row-gap: 24px;
 }
 
