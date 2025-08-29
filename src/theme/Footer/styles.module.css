@@ -107,7 +107,9 @@ Icon font setup is required for community icons
 /* Main section with links and QR */
 .main {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */          /* CHANGED: 避免左右被强制拉开，导致左侧出现“空列”视觉 */
+  align-items: flex-start;                        /* CHANGED */
+  gap: 2rem;                                      /* CHANGED: 用 gap 来控制左右间距 */
   margin-bottom: 3rem;
 }
 
@@ -118,6 +120,9 @@ Icon font setup is required for community icons
   flex-wrap: wrap;
   column-gap: 32px;
   row-gap: 24px;
+  /* 可选：确保左侧区域不会与右侧重叠（按右侧固定宽度预留空间）
+     如果你希望更“自适应”，可以删除这一行。 */
+  /* max-width: calc(100% - 320px); */            /* 可选 */
 }
 
 /* 每一列 */
@@ -126,7 +131,8 @@ Icon font setup is required for community icons
   margin: 0;
   padding: 0;
   /* 允许列均分，也能在小屏自动换行 */
-  flex: 1 1 180px; /* 基准宽度 180px */
+  /* flex: 1 1 180px; */                          /* CHANGED */
+  flex: 0 0 180px;                                /* CHANGED: 固定列基宽，避免被拉伸造成“看起来缺一列” */
   min-width: 180px;
   max-width: 240px; /* 防止列过宽 */
 }
@@ -160,6 +166,8 @@ Icon font setup is required for community icons
   text-align: center;
   margin-left: 2rem; /* Space between links and QR section */
   flex-shrink: 0; /* Prevent right side from shrinking too much */
+  width: 280px;                                    /* CHANGED: 给右侧固定宽，左侧就能明确排 4-5 列 */
+  flex: 0 0 280px;                                  /* CHANGED */
 }
 
 .right .title {
@@ -268,6 +276,7 @@ Icon font setup is required for community icons
       text-align: left; /* Keep link text left-aligned */
       min-width: auto; /* Remove min-width */
       width: calc(50% - 2rem); /* Approximately two columns */
+      flex: 0 0 auto;                                /* CHANGED: 移动端用宽度控制两列 */
   }
   
    .left ul:nth-child(odd) {
@@ -283,4 +292,4 @@ Icon font setup is required for community icons
         width: 100%; /* Stack columns */
         margin: 0 0 1.5rem 0;
     }
-} 
+}
