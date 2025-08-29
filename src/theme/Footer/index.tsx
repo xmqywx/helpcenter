@@ -26,7 +26,7 @@ export default function FooterWrapper(props: Props): ReactNode {
     </li>
   );
 
-  // Footer link data based on provided HTML
+ // Footer link data based on provided HTML
   const footerLinks = {
     about: [
       { label: 'About us', href: 'https://coinbyte.com.au/en-us/about/' },
@@ -57,34 +57,33 @@ export default function FooterWrapper(props: Props): ReactNode {
        { label: 'Connect with Coinbyte', href: 'https://coinbyte.com.au/en-us/connect/' },
     ],
     buyCrypto: [
-        { label: 'Buy Bitcoin, href: 'https://coinbyte.com.au/en-us/retail/btc_aud?isBuy=true' },
-        { label: 'Buy Ethereum, href: 'https://coinbyte.com.au/en-us/retail/eth_aud?isBuy=true' },
-        { label: 'Buy USDT, href: 'https://coinbyte.com.au/en-us/retail/usdt_aud?isBuy=true' },
-        { label: 'Buy XRP, href: 'https://coinbyte.com.au/en-us/retail/xrp_aud?isBuy=true' },
-        { label: 'Buy SOL, href: 'https://coinbyte.com.au/en-us/retail/sol_aud?isBuy=true' },
+        { label: 'Buy Bitcoin', href: 'https://coinbyte.com.au/en-us/retail/btc_aud?isBuy=true' },
+        { label: 'Buy Ethereum', href: 'https://coinbyte.com.au/en-us/retail/eth_aud?isBuy=true' },
+        { label: 'Buy USDT', href: 'https://coinbyte.com.au/en-us/retail/usdt_aud?isBuy=true' },
+        { label: 'Buy XRP', href: 'https://coinbyte.com.au/en-us/retail/xrp_aud?isBuy=true' },
+        { label: 'Buy SOL', href: 'https://coinbyte.com.au/en-us/retail/sol_aud?isBuy=true' },
     ],
     sellCrypto: [
-        { label: 'Sell Bitcoin, href: 'https://coinbyte.com.au/en-us/retail/btc_aud?isBuy=false' },
-        { label: 'Sell Ethereum, href: 'https://coinbyte.com.au/en-us/retail/eth_aud?isBuy=false'' },
-        { label: 'Sell USDT, href: 'https://coinbyte.com.au/en-us/retail/usdt_aud?isBuy=false'' },
-        { label: 'Sell XRP, href: 'https://coinbyte.com.au/en-us/retail/xrp_aud?isBuy=false'' },
-        { label: 'Sell SOL, href: 'https://coinbyte.com.au/en-us/retail/sol_aud?isBuy=false'' },
+        { label: 'Sell Bitcoin', href: 'https://coinbyte.com.au/en-us/retail/btc_aud?isBuy=false' },
+        { label: 'Sell Ethereum', href: 'https://coinbyte.com.au/en-us/retail/eth_aud?isBuy=false'' },
+        { label: 'Sell USDT', href: 'https://coinbyte.com.au/en-us/retail/usdt_aud?isBuy=false'' },
+        { label: 'Sell XRP', href: 'https://coinbyte.com.au/en-us/retail/xrp_aud?isBuy=false'' },
+        { label: 'Sell SOL', href: 'https://coinbyte.com.au/en-us/retail/sol_aud?isBuy=false'' },
     ],
     trade: [
-        { label: 'BTC / AUD, href: 'https://coinbyte.com.au/en-us/exchange/btc_aud?isBuy=true' }, 
-{ label: 'ETH / AUD, href: 'https://coinbyte.com.au/en-us/exchange/eth_aud?isBuy=true' }, 
-{ label: 'XRP / AUD, href: 'https://coinbyte.com.au/en-us/exchange/xrp_aud?isBuy=true' },
-{ label: 'SOL / AUD, href: 'https://coinbyte.com.au/en-us/exchange/sol_aud?isBuy=true' },
-        { label: 'BTC / NZD, href: 'https://coinbyte.com.au/en-us/exchange/btc_nzd?isBuy=true' }, 
-{ label: 'ETH / NZD, href: 'https://coinbyte.com.au/en-us/exchange/eth_nzd?isBuy=true' }, 
-        { label: 'XRP / NZD, href: 'https://coinbyte.com.au/en-us/exchange/xrp_nzd?isBuy=true' },
- { label: 'SOL / NZD, href: 'https://coinbyte.com.au/en-us/exchange/sol_nzd?isBuy=true' },
-        { label: 'Bitcoin Price, href: 'https://coinbyte.com.au/en-us/exchange/btc_aud?isBuy=true' }, 
-{ label: 'Ethereum Price, href: 'https://coinbyte.com.au/en-us/exchange/eth_aud?isBuy=true' },
- { label: 'XRP Price, href: 'https://coinbyte.com.au/en-us/exchange/xrp_aud?isBuy=true' },
-        { label: 'Solana Price, href: 'https://coinbyte.com.au/en-us/exchange/sol_aud?isBuy=true' }, 
-{ label: 'Doge Price, href: 'https://coinbyte.com.au/en-us/exchange/doge_aud?isBuy=true' }
-
+        { label: 'BTC/AUD', href: 'https://coinbyte.com.au/en-us/exchange/btc_aud?isBuy=true' }, 
+{ label: 'ETH/AUD', href: 'https://coinbyte.com.au/en-us/exchange/eth_aud?isBuy=true' }, 
+{ label: 'XRP/AUD', href: 'https://coinbyte.com.au/en-us/exchange/xrp_aud?isBuy=true' },
+{ label: 'SOL/AUD', href: 'https://coinbyte.com.au/en-us/exchange/sol_aud?isBuy=true' },
+        { label: 'BTC/NZD', href: 'https://coinbyte.com.au/en-us/exchange/btc_nzd?isBuy=true' }, 
+{ label: 'ETH/NZD', href: 'https://coinbyte.com.au/en-us/exchange/eth_nzd?isBuy=true' }, 
+        { label: 'XRP/NZD', href: 'https://coinbyte.com.au/en-us/exchange/xrp_nzd?isBuy=true' },
+ { label: 'SOL/NZD', href: 'https://coinbyte.com.au/en-us/exchange/sol_nzd?isBuy=true' },
+        { label: 'Bitcoin Price', href: 'https://coinbyte.com.au/en-us/exchange/btc_aud?isBuy=true' }, 
+{ label: 'Ethereum Price', href: 'https://coinbyte.com.au/en-us/exchange/eth_aud?isBuy=true' },
+ { label: 'XRP Price', href: 'https://coinbyte.com.au/en-us/exchange/xrp_aud?isBuy=true' },
+        { label: 'Solana Price', href: 'https://coinbyte.com.au/en-us/exchange/sol_aud?isBuy=true' }, 
+{ label: 'Doge Price', href: 'https://coinbyte.com.au/en-us/exchange/doge_aud?isBuy=true' }
   const communityLinks = [
       { href: '#', iconClass: 'icon-community_twitter' },
       { href: '#', iconClass: 'icon-community_tiktok' },
