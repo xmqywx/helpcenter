@@ -52,7 +52,7 @@ export default function FooterWrapper(props: Props): ReactNode {
       { label: 'Fee schedule', href: 'https://coinbyte.com.au/en-us/fees/' },
     ],
     support: [
-       { label: 'Support center', href: 'https://coinbyte.com.au/en-us/' }, // Assuming this is the help center base
+       { label: 'Support center', href: 'https://support.coinbyte.com.au/' }, // Assuming this is the help center base
        { label: 'Announcement', href: 'https://support.coinbyte.com.au/docs/announcements' },
        { label: 'Connect with Coinbyte', href: 'https://coinbyte.com.au/en-us/connect/' },
     ],
