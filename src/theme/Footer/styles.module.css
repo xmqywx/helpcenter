@@ -107,9 +107,9 @@ Icon font setup is required for community icons
 /* Main section with links and QR */
 .main {
   display: flex;
-  /* justify-content: space-between; */          /* CHANGED: 避免左右被强制拉开，导致左侧出现“空列”视觉 */
-  align-items: flex-start;                        /* CHANGED */
-  gap: 2rem;                                      /* CHANGED: 用 gap 来控制左右间距 */
+  /* justify-content: space-between;  删除这行 */
+  align-items: flex-start;
+  gap: 24px;               /* 新增：统一左右间距 */
   margin-bottom: 3rem;
 }
 
@@ -118,11 +118,8 @@ Icon font setup is required for community icons
   display: flex;
   flex: 1 1 auto;
   flex-wrap: wrap;
-  column-gap: 32px;
+  column-gap: 24px;        /* 32px -> 24px */
   row-gap: 24px;
-  /* 可选：确保左侧区域不会与右侧重叠（按右侧固定宽度预留空间）
-     如果你希望更“自适应”，可以删除这一行。 */
-  /* max-width: calc(100% - 320px); */            /* 可选 */
 }
 
 /* 每一列 */
@@ -130,11 +127,10 @@ Icon font setup is required for community icons
   list-style: none;
   margin: 0;
   padding: 0;
-  /* 允许列均分，也能在小屏自动换行 */
-  /* flex: 1 1 180px; */                          /* CHANGED */
-  flex: 0 0 180px;                                /* CHANGED: 固定列基宽，避免被拉伸造成“看起来缺一列” */
-  min-width: 180px;
-  max-width: 240px; /* 防止列过宽 */
+  /* flex: 1 1 180px;  删除这行 */
+  flex: 0 0 150px;         /* 新增：基准宽 150px（5 列更容易并排） */
+  min-width: 150px;        /* 180px -> 150px */
+  max-width: 220px;        /* 240px -> 220px（防过宽） */
 }
 
 .left li {
@@ -164,10 +160,10 @@ Icon font setup is required for community icons
 
 .right {
   text-align: center;
-  margin-left: 2rem; /* Space between links and QR section */
-  flex-shrink: 0; /* Prevent right side from shrinking too much */
-  width: 280px;                                    /* CHANGED: 给右侧固定宽，左侧就能明确排 4-5 列 */
-  flex: 0 0 280px;                                  /* CHANGED */
+  /* margin-left: 2rem;    删除这行，交给 .main 的 gap 控制 */
+  flex-shrink: 0;
+  width: 240px;            /* 280px -> 240px */
+  flex: 0 0 240px;         /* 280px -> 240px */
 }
 
 .right .title {
