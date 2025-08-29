@@ -84,6 +84,9 @@ export default function FooterWrapper(props: Props): ReactNode {
  { label: 'XRP Price', href: 'https://coinbyte.com.au/en-us/exchange/xrp_aud?isBuy=true' },
         { label: 'Solana Price', href: 'https://coinbyte.com.au/en-us/exchange/sol_aud?isBuy=true' }, 
 { label: 'Doge Price', href: 'https://coinbyte.com.au/en-us/exchange/doge_aud?isBuy=true' }
+    ]
+  };
+      
   const communityLinks = [
       { href: '#', iconClass: 'icon-community_twitter' },
       { href: '#', iconClass: 'icon-community_tiktok' },
