@@ -144,7 +144,7 @@ export default function FooterWrapper(props: Props): ReactNode {
               Trade on the go with<br />COINBYTE
             </div>
             {/* Assuming register links to signup page */}
-            <Link to={useBaseUrl('/signup')} className={styles.registerBtn}> 
+            <Link to={useBaseUrl('https://coinbyte.com.au/en-us/register/')} className={styles.registerBtn}> 
               Register
             </Link>
             <div className={styles.qrCode}>
