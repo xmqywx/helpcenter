@@ -134,10 +134,10 @@ export default function FooterWrapper(props: Props): ReactNode {
                 <li className={`${styles.title} ${styles.titleWrapper}`}>Sell Crypto</li>
                 {footerLinks.sellCrypto.map(renderLinkItem)}
              </ul>
-             {/* <ul>
+             <ul>
                 <li className={styles.title}>Trade</li>
                 {footerLinks.trade.map(renderLinkItem)}
-             </ul> */}
+             </ul>
           </div>
           <div className={styles.right}>
             <div className={styles.title}>
