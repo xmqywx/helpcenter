@@ -12,7 +12,7 @@ type Props = WrapperProps<typeof FooterType>;
 
 export default function FooterWrapper(props: Props): ReactNode {
   const logoUrl = useBaseUrl('/img/coinbyte_support.svg'); // Use the correct logo path if different
-  const qrCodeUrl = useBaseUrl('/img/general/downloadqrcode.png/');
+  const qrCodeUrl = useBaseUrl('/img/general/downloadqrcode.png');
   // Helper function to render link list items
   const renderLinkItem = (link: { href?: string; label: string }, index: number) => (
     <li key={index}>
