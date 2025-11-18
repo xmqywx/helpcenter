@@ -4,6 +4,8 @@ slug: /announcements
 hide_table_of_contents: true
 ---
 
+import DocumentList from '@site/src/components/DocumentList';
+
 # Announcements
 
 Get the latest updates, news, and important announcements about CoinByte.
@@ -16,8 +18,13 @@ Stay informed about the latest features, improvements, and important notices fro
 
 <DocumentList category="announcements" />
 
-## Stay Connected
+## Campaigns
 
-- Follow our official channels for real-time updates
-- Check back regularly for new announcements
-- Subscribe to our newsletter for important updates
+<a href="/docs/category/campaigns" style={{ color: 'black' }}>
+
+
+### Stay Connected
+
+- Follow our official channels for real-time updates—new announcements will always be shared on our social media.  
+  <a href="https://coinbyte.com.au/en-us/contact/">Follow us here</a>.
+
