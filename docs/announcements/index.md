@@ -23,7 +23,7 @@ Stay informed about the latest features, improvements, and important notices fro
   <h2>Campaigns</h2>
 </a>
 
-<DocumentList category="announcements/campaigns" />
+<DocumentList category="announcements/Campaigns" />
 <br />
 
 <h2>Stay Connected</h2>
