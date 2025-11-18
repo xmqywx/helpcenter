@@ -10,20 +10,23 @@ import DocumentList from '@site/src/components/DocumentList';
 
 Get the latest updates, news, and important announcements about CoinByte.
 
-import DocumentList from '@site/src/components/DocumentList';
 
-## Latest Updates
+<a href="/docs/category/latest-updates" style={{ color: 'black' }}>
+  <h2>Latest Updates</h2>
 
 Stay informed about the latest features, improvements, and important notices from CoinByte.
 
 <DocumentList category="announcements" />
-
-## Campaigns
+<br/>
 
 <a href="/docs/category/campaigns" style={{ color: 'black' }}>
+  <h2>Campaigns</h2>
+</a>
+<DocumentList category="announcements/campaigns" />
+  <br/>
 
 
-### Stay Connected
+<h2>Stay Connected</h2>
 
 - Follow our official channels for real-time updates—new announcements will always be shared on our social media.  
   <a href="https://coinbyte.com.au/en-us/contact/">Follow us here</a>.
