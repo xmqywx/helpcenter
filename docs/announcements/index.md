@@ -5,6 +5,7 @@ hide_table_of_contents: true
 ---
 
 import DocumentList from '@site/src/components/DocumentList';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Announcements
 
@@ -15,8 +16,7 @@ Get the latest updates, news, and important announcements about CoinByte.
 CoinByte is proud to announce the official launch of our digital asset trading platform—built in Australia, for Australian users, and fully compliant with local regulatory requirements.
 
 <figure style={{ textAlign: 'center', marginTop: '1.5rem', marginBottom: '1.5rem' }}>
-  <img
-    src="https://x.com/CoinByte_AU/status/1991412823956787568/photo/1"
+  <img src={useBaseUrl('/img/email/launch.jpg')}
     alt="CoinByte official launch announcement"
     style={{ maxWidth: '580px', width: '100%', borderRadius: '12px', boxShadow: '0 6px 18px rgba(0, 0, 0, 0.08)' }}
   />
