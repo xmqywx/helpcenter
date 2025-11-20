@@ -10,6 +10,27 @@ import DocumentList from '@site/src/components/DocumentList';
 
 Get the latest updates, news, and important announcements about CoinByte.
 
+### CoinByte is now live in Australia
+
+CoinByte is proud to announce the official launch of our digital asset trading platform—built in Australia, for Australian users, and fully compliant with local regulatory requirements.
+
+<figure style={{ textAlign: 'center', marginTop: '1.5rem', marginBottom: '1.5rem' }}>
+  <img
+    src="https://x.com/CoinByte_AU/status/1991412823956787568/photo/1"
+    alt="CoinByte official launch announcement"
+    style={{ maxWidth: '580px', width: '100%', borderRadius: '12px', boxShadow: '0 6px 18px rgba(0, 0, 0, 0.08)' }}
+  />
+</figure>
+Step into a trusted digital asset platform designed for Australian traders：
+- **Australian-based and fully compliant** — registered with **ASIC & AUSTRAC**  
+- **Fast and reliable AUD deposits and withdrawals**  
+- **$0 fees** on all AUD deposits and withdrawals  
+- Support for AUD trading pairs including **AUD/BTC**, **AUD/ETH**, **AUD/SOL**, and more  
+- **Competitive trading fees and low spreads**, ensuring fair and efficient execution  
+
+We look forward to supporting Australian users with a compliant, transparent, and accessible digital asset trading platform.
+
+
 <a href="/docs/category/latest-updates" style={{ color: 'black' }}>
   <h2>Latest Updates</h2>
 </a>
