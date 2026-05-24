@@ -1,0 +1,212 @@
+/**
+ * ============================================================================
+ * App-mode overrides — 仅当 <html> 带有 `app-mode` class 时生效。
+ *
+ * 该 class + `data-app-theme="<dark|light|classic>"` 由 docusaurus.config.ts 的
+ * headTags 内联脚本添加，且仅在页面带 `?app=1&theme=...` 参数（即从 CoinByte App
+ * 的 webview 打开）时才添加。
+ *
+ * 普通 web / 移动端浏览器访问不带参数 => 永远拿不到 app-mode class
+ * => 本文件对公开站点【零影响】。所有规则都严格 scope 在 `html.app-mode` 下。
+ *
+ * 目标：App 内只显示「文章标题 + 正文 + 内嵌图片」，调色板跟随 App 当前主题
+ *       （dark 纯黑 / light 浅色 / classic 深蓝），字体贴近 App。
+ * ============================================================================
+ */
+
+/* ---- 1. 隐藏除文章外的一切（导航 / topbar / footer / 面包屑 / 翻页 / TOC / 侧栏 等） ---- */
+html.app-mode .navbar,
+html.app-mode .navbar-sidebar,
+html.app-mode .navbar-sidebar__backdrop,
+html.app-mode footer,
+html.app-mode .footer,
+html.app-mode .theme-doc-sidebar-container,
+html.app-mode aside.theme-doc-sidebar-container,
+html.app-mode nav.theme-doc-breadcrumbs,
+html.app-mode .theme-doc-breadcrumbs,
+html.app-mode .breadcrumbs,
+html.app-mode div[class*='docBreadcrumbs'],
+html.app-mode .pagination-nav,
+html.app-mode .theme-doc-toc-desktop,
+html.app-mode .theme-doc-toc-mobile,
+html.app-mode [class*='tableOfContents'],
+html.app-mode .theme-edit-this-page,
+html.app-mode .theme-last-updated,
+html.app-mode [class*='lastUpdated'],
+html.app-mode .theme-doc-version-badge,
+html.app-mode .theme-doc-version-banner,
+html.app-mode .docItemFooter,
+html.app-mode .theme-doc-footer,
+html.app-mode [class*='tag_'],
+html.app-mode .related-articles {
+  display: none !important;
+}
+
+/* ---- 2. 满宽 + 单层左右 padding：根治「两侧空白过大」 ----
+ * 真实 DOM 嵌套（每层都可能带 padding/margin，叠起来就是大片空白）：
+ *   main.docMainContainer > .container(默认 padding:0 16px) > .row > .col.docItemCol
+ *     > .docItemContainer > .theme-doc-markdown(文章内容)
+ * 策略：把从 main 到 docItemContainer 的所有层 padding/margin 全部清零，
+ *       唯一的 16px 内边距只留在最内层 .theme-doc-markdown 上 => 只剩一层。 */
+html.app-mode .main-wrapper,
+html.app-mode [class*='mainWrapper'],
+html.app-mode [class*='docsWrapper'],
+html.app-mode [class*='docRoot'],
+html.app-mode [class*='docPage'],
+html.app-mode main,
+html.app-mode .docMainContainer,
+html.app-mode [class*='docMainContainer'],
+html.app-mode .container,
+html.app-mode .row,
+html.app-mode .col,
+html.app-mode [class*='docItemCol'],
+html.app-mode .docItemContainer,
+html.app-mode [class*='docItemContainer'],
+html.app-mode article {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  flex: 0 0 100% !important;
+}
+
+/* 唯一的内容内边距：只加在最内层 .markdown 上，左右 16px，对齐 App pagePadding */
+html.app-mode .theme-doc-markdown {
+  padding: 16px 16px 40px !important;
+}
+
+/* ---- 3. 主题调色板 ----
+ * 每套主题定义一组 --cb-* 变量，下方共享规则统一引用，避免重复三遍。
+ * 取值来自 app 的 AppPalette（lib/theme/app_colors.dart）。 */
+
+/* 默认兜底（无 / 未知 theme）= classic 深蓝，与 app 默认主题一致 */
+html.app-mode {
+  --cb-bg: #0B0F18;
+  --cb-text: rgba(255, 255, 255, 0.85);
+  --cb-heading: #ffffff;
+  --cb-link: #3EFF8C;
+  --cb-border: rgba(255, 255, 255, 0.12);
+  --cb-code-bg: rgba(255, 255, 255, 0.08);
+  --cb-code-text: rgba(255, 255, 255, 0.92);
+  --cb-block-bg: #222428;
+  --cb-quote-bg: rgba(255, 255, 255, 0.03);
+}
+
+/* dark — 纯黑 OLED (#000000) */
+html.app-mode[data-app-theme='dark'] {
+  --cb-bg: #000000;
+  --cb-text: rgba(255, 255, 255, 0.85);
+  --cb-heading: #ffffff;
+  --cb-link: #3EFF8C;
+  --cb-border: rgba(255, 255, 255, 0.12);
+  --cb-code-bg: rgba(255, 255, 255, 0.08);
+  --cb-code-text: rgba(255, 255, 255, 0.92);
+  --cb-block-bg: #1C1C1E;
+  --cb-quote-bg: rgba(255, 255, 255, 0.03);
+}
+
+/* classic — 深蓝 (#0B0F18) */
+html.app-mode[data-app-theme='classic'] {
+  --cb-bg: #0B0F18;
+  --cb-text: rgba(255, 255, 255, 0.85);
+  --cb-heading: #ffffff;
+  --cb-link: #3EFF8C;
+  --cb-border: rgba(255, 255, 255, 0.12);
+  --cb-code-bg: rgba(255, 255, 255, 0.08);
+  --cb-code-text: rgba(255, 255, 255, 0.92);
+  --cb-block-bg: #222428;
+  --cb-quote-bg: rgba(255, 255, 255, 0.03);
+}
+
+/* light — 浅色 (#EEF0F3，文字近黑 #111418) */
+html.app-mode[data-app-theme='light'] {
+  --cb-bg: #EEF0F3;
+  --cb-text: rgba(17, 20, 24, 0.85);
+  --cb-heading: #111418;
+  --cb-link: #00C875;
+  --cb-border: rgba(0, 0, 0, 0.12);
+  --cb-code-bg: rgba(17, 20, 24, 0.06);
+  --cb-code-text: #111418;
+  --cb-block-bg: #FFFFFF;
+  --cb-quote-bg: rgba(0, 0, 0, 0.03);
+}
+
+/* 共享规则：把 Infima 变量与关键元素映射到上面的 --cb-* */
+html.app-mode {
+  --ifm-background-color: var(--cb-bg);
+  --ifm-background-surface-color: var(--cb-bg);
+  --ifm-color-content: var(--cb-text);
+  --ifm-heading-color: var(--cb-heading);
+  --ifm-link-color: var(--cb-link);
+  --ifm-color-primary: var(--cb-link);
+  --ifm-font-family-base: -apple-system, system-ui, 'Inter', 'Segoe UI',
+    Roboto, Helvetica, Arial, sans-serif;
+  --ifm-hr-border-color: var(--cb-border);
+  --ifm-table-border-color: var(--cb-border);
+  --ifm-blockquote-border-color: var(--cb-border);
+  --ifm-blockquote-color: var(--cb-text);
+  background-color: var(--cb-bg) !important;
+}
+
+html.app-mode body {
+  background-color: var(--cb-bg) !important;
+  color: var(--cb-text);
+}
+
+/* 标题 */
+html.app-mode .markdown h1,
+html.app-mode .markdown h2,
+html.app-mode .markdown h3,
+html.app-mode .markdown h4,
+html.app-mode .markdown h5,
+html.app-mode .markdown h6 {
+  color: var(--cb-heading) !important;
+}
+
+/* 现有全局规则把第一个 h1 居中并加底边框——App 模式下还原为左对齐、无边框 */
+html.app-mode .markdown h1:first-child {
+  text-align: left !important;
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 1rem !important;
+  font-size: 1.75rem !important;
+}
+
+/* 正文链接 */
+html.app-mode .markdown a {
+  color: var(--cb-link) !important;
+  text-decoration: none;
+}
+
+/* 内嵌图片正常显示 */
+html.app-mode .markdown img {
+  max-width: 100% !important;
+  height: auto !important;
+  border-radius: 12px;
+}
+
+/* 行内代码 + 代码块 */
+html.app-mode .markdown code {
+  background-color: var(--cb-code-bg) !important;
+  color: var(--cb-code-text) !important;
+}
+html.app-mode pre,
+html.app-mode .theme-code-block,
+html.app-mode div[class*='codeBlockContainer'] {
+  background-color: var(--cb-block-bg) !important;
+}
+
+/* 表格 */
+html.app-mode table th,
+html.app-mode table td {
+  border-color: var(--cb-border) !important;
+}
+html.app-mode table tr {
+  background-color: transparent !important;
+}
+
+/* 引用块 */
+html.app-mode blockquote {
+  background-color: var(--cb-quote-bg) !important;
+  border-left-color: var(--cb-border) !important;
+}

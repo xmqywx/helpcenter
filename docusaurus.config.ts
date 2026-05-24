@@ -16,6 +16,26 @@ const config: Config = {
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
 
+  // App-mode: 仅当页面带 ?app=1（从 CoinByte App 的 webview 打开）时，给 <html>
+  // 加 `app-mode` class + `data-app-theme="<dark|light|classic>"`（来自 ?theme=），
+  // 使 app-mode.css 按 app 当前主题应用对应调色板。
+  //
+  // 关键：只认【当前 URL 的 ?app=1】，不做任何 sessionStorage 持久化 => 普通 web
+  // 访问（不带参数）永远是原站样式，公开站点零影响。
+  //
+  // Docusaurus 在 hydration 时会用它自己的串覆盖 <html> className，把我们加的 class
+  // 抹掉；故用 MutationObserver 盯住 class，一旦 app-mode 被移除就立刻补回（早注入=
+  // 无闪烁，被覆盖=瞬时补回，有 contains 守卫不会死循环）。data-app-theme 是自定义
+  // 属性，Docusaurus 不管理，设一次即可。
+  headTags: [
+    {
+      tagName: 'script',
+      attributes: {},
+      innerHTML:
+        "(function(){try{var p=new URLSearchParams(window.location.search);if(p.get('app')!=='1'){return;}var el=document.documentElement;el.setAttribute('data-app-theme',p.get('theme')||'dark');var add=function(){if(el.classList&&!el.classList.contains('app-mode')){el.classList.add('app-mode');}};add();try{var mo=new MutationObserver(add);mo.observe(el,{attributes:true,attributeFilter:['class']});}catch(e){}}catch(e){}})();",
+    },
+  ],
+
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
@@ -59,7 +79,7 @@ const config: Config = {
           onUntruncatedBlogPosts: 'warn',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: ['./src/css/custom.css', './src/css/app-mode.css'],
         },
       } satisfies Preset.Options,
     ],
