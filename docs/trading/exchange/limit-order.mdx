@@ -10,6 +10,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import InfoBox from '@site/src/components/InfoBox';
 import RelatedArticles from '@site/src/components/RelatedArticles';
 import RoundStepList from '@site/src/components/RoundStepList';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # Limit order
 
@@ -47,6 +49,10 @@ For example, if the current market price of BTC/USDT is 50,000:
 </InfoBox>
 
 ## How to set a limit order on CoinByte
+
+<Tabs>
+<TabItem value="Mobile App" label="App">
+<div style={{ marginTop: '2.5rem' }}></div>
 
 ### **App**
 
@@ -113,17 +119,19 @@ For example, if the current market price of BTC/USDT is 50,000:
 
 <li>Confirm the trading information, select <strong>Purchase</strong> to place the order.</li>
 
-</RoundStepList>
-
 <WarningBox>
 <strong>Please note:</strong> the order may be executed at an unexpected price depending on market conditions. When placing the order, it will be executed at the price of maximum trading quantity and amount. Because of the limited number of digits in the price, the filled amount may be less than the specified amount.
 </WarningBox>
 
 </TabItem>
+<TabItem value="Web Platform" label="Web">
+<div style={{ marginTop: '2.5rem' }}></div>
+
+</RoundStepList>
+</TabItem>
 </Tabs>
 
 ---
 
-**If you want to get the exact price, you can refer to <a href="/docs/trading/exchange/limit-order"><strong>Limit Order</strong></a>
-.**
+**If you want to get the exact price, you can refer to <a href="/docs/trading/exchange/limit-order"><strong>Limit Order</strong></a>.**
 <RelatedArticles category="trading" />
