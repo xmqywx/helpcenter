@@ -51,4 +51,4 @@ Contact us for a custom quote based on your needs.
 
 ## Need Help?
 
-Visit our [contact page](/docs/troubleshooting/contact-support) to get in touch. 
+Visit our [contact page](/user-guide/about-coinbyte/contact-support) to get in touch. 
