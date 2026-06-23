@@ -67,4 +67,4 @@ try {
 
 ## Need Help?
 
-Check our [API documentation](/docs/advanced/api-usage) or contact [support](docs/user-guide/about-coinbyte/Contact-to-our-team). 
+Check our [API documentation](/docs/advanced/api-usage) or contact [support](https://support.coinbyte.com.au/docs/user-guide/about-coinbyte/contact-support). 
