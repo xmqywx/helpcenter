@@ -99,7 +99,6 @@ const sidebars: SidebarsConfig = {
       items: [
         'troubleshooting/common-issues',
         'troubleshooting/advanced',
-        'troubleshooting/contact-support',
       ],
     },
     {
