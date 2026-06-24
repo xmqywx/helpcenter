@@ -71,4 +71,4 @@ grep "ERROR" /var/log/app.log
 
 ## Need More Help?
 
-For complex issues, contact our [support team](./contact-support). 
+For complex issues, contact our [support team](/user-guide/about-coinbyte/contact-support). 
