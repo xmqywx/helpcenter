@@ -42,31 +42,11 @@ Invite your friends to create an CoinByte account using your referral code. Afte
 
 #### How do I invite friends?
 
-### **App**
-
-<div style={{ marginBottom: '1.5rem' }}></div>
-
 <RoundStepList>
   <li>Log in to your CoinByte App and go to the <strong>Reward</strong> module.</li>
   <li>Copy your referral code or invitation link and share it with your friends.</li>
 </RoundStepList>
 
-</TabItem>
-
-<TabItem value="Web Platform" label="Web">
-<div style={{ marginTop: '2.5rem' }}></div>
-
-### **Web**
-
-<div style={{ marginBottom: '1.5rem' }}></div>
-
-<RoundStepList>
-  <li>Select <strong>Referral</strong> in the footer.</li>
-  <li>Copy the <strong>Invite link</strong>, paste it at the web address bar to redirect to the sign-up page with referral.</li>
-  <li>Or copy the <strong>Invite code</strong>, and paste it when the new user is signing up.</li>
-</RoundStepList>
-</TabItem>
-</Tabs>
 
 #### Note:
 
