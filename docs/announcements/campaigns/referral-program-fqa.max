@@ -1,0 +1,124 @@
+---
+id: "referral-program-fqa."
+title: "Referral Program FAQ"
+sidebar_label: "Refer a Friend Program"
+sidebar_position: 3
+description: "Referral Program FAQ"
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import CoinByteButton from '@site/src/components/CoinByteButton';
+import InfoBox from '@site/src/components/InfoBox';
+import RoundStepList from '@site/src/components/RoundStepList';
+import RelatedArticles from '@site/src/components/RelatedArticles';
+
+# Referral Program FAQ
+
+Log in to your CoinByte account to check whether the products, features, rules, and terms in this article apply to you.
+
+### Personalized Referral Rewards
+
+Invite your friends to join CoinByte and receive exclusive rewards.
+<ul>
+
+  <li>During each referral campaign, the rewards you receive may vary. You may earn fixed crypto rewards or various rewards with a total value of up to a certain amount per successful referral.</li>
+  <li>Log in to your CoinByte App and visit the Reward module to check the latest reward offers you are eligible for.</li>
+
+</ul>
+
+### Eligibility for Referral Rewards
+
+Invite your friends to create an CoinByte account using your referral code. After they complete the following tasks, you will be eligible for rewards:
+
+<ul>
+  <li>Sign up through your unique referral link or code.</li>
+  <li>Complete advanced identity verification (KYC).</li>
+  <li>Complete a deposit and trading task: Your friend must complete a spot trade or Quick Buy/Sell worth no less than <strong>100 AUD</strong> within 30 days of registration.</li>
+</ul>
+
+---
+
+### FAQ
+
+#### How do I invite friends?
+
+### **App**
+
+<div style={{ marginBottom: '1.5rem' }}></div>
+
+<RoundStepList>
+  <li>Log in to your CoinByte App and go to the <strong>Reward</strong> module.</li>
+  <li>Copy your referral code or invitation link and share it with your friends.</li>
+</RoundStepList>
+
+</TabItem>
+
+<TabItem value="Web Platform" label="Web">
+<div style={{ marginTop: '2.5rem' }}></div>
+
+### **Web**
+
+<div style={{ marginBottom: '1.5rem' }}></div>
+
+<RoundStepList>
+  <li>Select <strong>Referral</strong> in the footer.</li>
+  <li>Copy the <strong>Invite link</strong>, paste it at the web address bar to redirect to the sign-up page with referral.</li>
+  <li>Or copy the <strong>Invite code</strong>, and paste it when the new user is signing up.</li>
+</RoundStepList>
+</TabItem>
+</Tabs>
+
+#### Note:
+
+<ul>
+  <li>You can check your referral rewards in the CoinByte App → Reward → My Referrals.</li>
+  <li>Your friend’s reward must be claimed within the current campaign period.</li>
+  <li>You can invite as many friends as you like, the more friends you invite, the more rewards you get.</li>
+  <li>Your friends will automatically join the platform’s New User Bonus Program.</li>
+  <li>Referral relationships can only be established at the time of registration. Once registration and identity verification are complete, the relationship cannot be changed.</li>
+</ul>
+
+### Can my invitees add or change a referral code after registering?
+No. Referral codes must be entered during registration. It is not possible to add or change the referral code after the account has been created.
+
+#### How do inviters earn rewards?
+<ul>
+  <li>Inviters receive rewards once their invitees complete all required tasks.</li>
+  <li>You must claim your reward before the end of the campaign period. Once claimed, the reward will be deposited into your account.</li>
+  <li>Inviters may unlock higher rewards if their invitees complete additional or more advanced tasks.</li>
+</ul>
+
+#### Are referral rewards the same for all inviters?
+Rewards may vary depending on the campaign and the tasks required. The exact reward structure is always displayed on the <strong>Reward</strong> page in your account.
+
+<InfoBox>
+  The rest of the Terms & Conditions and FAQ remain the same as the previous version.
+</InfoBox>
+
+---
+
+### Terms and conditions
+
+<ul>
+  <li>Each reward may include crypto assets and must be claimed within the specified event period shown on the referral page, otherwise it will expire. Rewards can only be claimed via the CoinByte App.</li>
+  <li>You can claim your referral rewards on the <strong>Reward</strong> > Invite History page in the CoinByte App. After claiming, you can view your rewards in the Rewards Center.</li>
+  <li>Affiliate users are only eligible for the affiliate program rewards and are not eligible for referral rewards by inviting friends.</li>
+  <li>Sub-accounts are not eligible to participate in this referral program, receive rewards, or be invited as invitees.</li>
+  <li>Please note that the value of rewards may fluctuate due to market movements. Prices of digital assets, including stablecoins, are highly volatile and can increase or decrease at any moment. You may gain or lose value in your assets due to such fluctuations.</li>
+  <li>If any fraudulent behavior is detected (such as fake registration, fraudulent trading, or falsified identity verification), CoinByte will conduct a strict review and reserves the right to cancel the participation eligibility and forfeit all rewards of the involved users.</li>
+  <li>Invitees must complete the specified tasks (e.g., sign-up, KYC, and trading) via eligible channels as shown on the referral page within <strong>30 days</strong> of registration.</li>
+  <li>Trading tasks require completing a spot trade or Quick Buy/Sell of no less than <strong>100 AUD</strong> (or equivalent) within the specified period.</li>
+  <li>Inviters’ rewards are determined by the successful completion of invitee tasks. In some cases, completing additional tasks may unlock higher rewards.</li>
+  <li>Rewards are generally distributed immediately after the referral tasks are completed, though they may be subject to a lock-up period. Due to system issues or special circumstances, distribution may be delayed. If you have not received your rewards within 48 hours after your friend completes the tasks, please contact customer support.</li>
+  <li>CoinByte has the right to suspend, freeze, or seal user accounts and assets in accordance with applicable laws and the CoinByte Terms of Service.</li>
+  <li>CoinByte reserves the right to disqualify or suspend any participant and confiscate all rewards if they are found engaging in dishonest or abusive behavior, including but not limited to click farming, registering multiple accounts, using others’ accounts or KYC information, providing false information, using device farms, wash trading, or any other activities that violate the program rules or local regulations.</li>
+  <li>This referral program does not constitute (i) investment advice or recommendation; (ii) an offer or solicitation to buy or sell digital assets; or (iii) financial, accounting, legal, or tax advice. You should carefully consider whether participating is suitable for you based on your financial condition and risk tolerance. Please consult your legal, tax, or investment professional for advice specific to your situation. Digital assets are subject to high market volatility and risk of loss. AAA is not responsible for any potential losses.</li>
+  <li>Notwithstanding anything to the contrary, CoinByte reserves the right to exclude any participant without prior notice. For more details, please refer to the CoinByte Terms of Service.</li>
+  
+</ul>
+
+
+
+---
+
+<RelatedArticles category="campaigns" />
