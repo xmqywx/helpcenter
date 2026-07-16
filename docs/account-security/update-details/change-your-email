@@ -1,0 +1,57 @@
+---
+id: change-your-email address
+title: Change your Email Address
+sidebar_label: Change your Email Address
+sidebar_position: 4
+description: "Step-by-step guide to change your registered email address for email verification on CoinByte"
+---
+
+import CoinByteButton from '@site/src/components/CoinByteButton'
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import InfoBox from '@site/src/components/InfoBox';
+import WarningBox from '@site/src/components/WarningBox';
+import RoundStepList from '@site/src/components/RoundStepList';
+import RelatedArticles from '@site/src/components/RelatedArticles';
+
+It's important to keep your registered email address up to date for email confirmation and verification.
+
+If your email address changes and you still have access to your current registered email, you can follow the step-by-step instructions in this article.
+
+<InfoBox>
+💡 If you no longer have access to your current email address, you can update it through another 2FA verification method.
+</InfoBox>
+
+---
+
+## How to change your email address
+
+### **App**
+
+<RoundStepList>
+  <li>Select the <img src="https://efile.coinbyte.com.au/20260604learn_iocn_personal.png" alt="CoinByte icon" width="20" /> in the top right to open the <strong>Personal center</strong>.</li>
+  <li>Select your <strong>email address</strong> to open the <strong>Account information page</strong>.</li>
+<figure style={{ textAlign: 'center' }}>
+  <img src="https://efile.coinbyte.com.au/20260604learn_iocn_personal1.jpg" alt="personal" style={{ width: 300 }} />
+</figure>
+  <li>Select <strong>Security</strong>.</li>
+  <li>Select <strong>Email</strong>.</li>
+  <li>Select the number on the right <img src="https://efile.coinbyte.com.au/20260604learn_iocn_edit.png" alt="edit" width="20" />.</li>
+  <li>Enter the number you want to change, and click <strong>Send verification code</strong>.</li>
+  <li>Enter the one-time passcode sent to the current Email Address on your account and select <strong>Next Step</strong>.</li>
+  <li>Enter the new Email Address and select <strong>Next Step</strong>.</li>
+  <li>Enter the one-time passcode sent to the new Email Address and select <strong>Verify</strong>.</li>
+</RoundStepList>
+
+<WarningBox>
+💡 <strong>Note:</strong> After changing your Email number, you will not be able to withdraw currencies within 24 hours.
+</WarningBox>
+
+### What if you don't have access to your registered Email?
+
+If you’ve lost access to your device or can’t log in with Email,<br/>
+please refer to the <a href="https://support.coinbyte.com.au/docs/account-security/update-details/change-account-info"><strong>Change Account Info</strong></a> section to modify your Email.
+
+
+<RelatedArticles category="update-details" />
